@@ -4,12 +4,12 @@
 
 - [NLM JATS elements](https://jats.nlm.nih.gov/archiving/tag-library/1.3/element/arc-elem-sec-intro.html)
 - [JATS Home](https://jats.nlm.nih.gov/index.html)
-- create test ISSNs ??? No idea, https://www.issn.org/ and https://portal.issn.org/ not very helpful
+- create test ISSNs ??? <!-- https://www.issn.org/ and https://portal.issn.org/ not very helpful -->
 
 ## BITS
 
 - [NLM BITS elements](https://jats.nlm.nih.gov/extensions/bits/tag-library/2.1/element/bits-elem-sec-intro.html)
-- [Random ISBN Generator(https://www.lambdatest.com/free-online-tools/random-isbn-generator) (a superb site 👍)
+- [Random ISBN Generator](https://www.lambdatest.com/free-online-tools/random-isbn-generator) (good site 👍)
 
 ## other publishers
 
