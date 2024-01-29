@@ -66,3 +66,9 @@
 </tf:issue-manifest>
 ```
 
+<!--
+- https://confluence.brill.com/display/FS/XML+and+PDF+instructions
+- https://connect.brill.com/display/FS/JATS+instructions
+- https://brillpublishers.gitlab.io/jats-and-bits/BITS-header.html
+- https://jats.nlm.nih.gov/archiving/tag-library/1.3/element/self-uri.html 
+-->
