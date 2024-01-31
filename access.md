@@ -71,7 +71,9 @@ This is displayed as follows on the platform:
 
 ### the other elements in `<permissions>`
 These elements are NOT nested and NOT (?) mandatory.
+
 1. `<copyright-statement>`
 2. `<copyright-year>`
 3. `<copyright-holder>`
+
 The copyright statement is displayed below the abstract (or one-page PDF if there is no abstract) on the article or chapter page. Copyright year and copyrioght holder are NOT displayed. Make sure to include that information in the copyright statement.
