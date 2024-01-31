@@ -22,7 +22,7 @@ The platform supports four types of access
 The access type is included in the XML - both JATS and BITS - through `<license>` and its `@license-type` attribute in  the `<permissions>` element.
 
 ### Subscribed to
-Omit <license>` from `<permissions>`.
+Omit `<license>` from `<permissions>`.
 
 Example from `10.5117.ANTW2023.1.007.LEEZ`:
 
