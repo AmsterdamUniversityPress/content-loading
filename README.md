@@ -4,6 +4,7 @@ how to load content onto AUP Online?
 ## toc
 
 - [Resources](https://amsterdamuniversitypress.github.io/content-loading/resources)
+- [Access](https://amsterdamuniversitypress.github.io/content-loading/access)
 
 ## planned pages
 
