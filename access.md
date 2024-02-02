@@ -10,13 +10,15 @@ AUP business models have three types of access
 2. Open Access (author/institution pays)
 3. Free (AUP pays)
 
-### AUP ONline
+### AUP Online
 The platform supports four types of access
 
 1. S = Titles Subscribed To
 2. OA = Open Access Content = content will be shown to users as Open Access on the platform.
 3. T = Free Trial Content = content will be shown to users as indefinitely Free on the platform.
 4. F = Free Content
+
+I have no idea how 3 is done.
 
 ## XML
 The access type is included in the XML - both JATS and BITS - through `<license>` and its `@license-type` attribute in  the `<permissions>` element.
