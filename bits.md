@@ -27,6 +27,7 @@ Declarations required at the top of each XML file are:
 XML version
 Character encoding
 Document Type Definition
+
 Example:
 
 `<?xml version="1.0" encoding="UTF-8" standalone="no"?>`
@@ -49,11 +50,14 @@ Book and chapter identifiers will be agreed between Ingenta and the publisher du
 
 The Edify loader is pre-configured to use the following elements to create the identifiers.
 
-Book	/book/book-meta/book-id[@book-id-type="doi"]
-Chapter / Section	book-part[@book-part-type="chapter"]/@id
+Type of content | XPath
+----- | ----
+Book | /book/book-meta/book-id[@book-id-type="doi"]
+Chapter / Section | book-part[@book-part-type="chapter"]/@id
 Figure	fig/@id
-Table	table-wrap/@id
-Other Media	media/@id
+Table | table-wrap/@id
+Other Media | media/@id
+
 Please note that the above defaults can be configured to pick up identifiers from other elements in the XML as long as the identifier values satisfy the above constraints.
 
 ## Book level metadata
@@ -61,41 +65,32 @@ This metadata is contained within the `<book-meta>` element. This element is alw
 
 The table below describes the required elements within the `<book-meta>` element
 
-`<book-title>`	
-This must be provided as a child of the `<book-title-group>` element.
-`<pub-date>`/`<year>`	
-The year of publication. This must be a 4 digit year only for example `<pub-date>``<year>`2018`</year>``</pub-date>`. The month and day of publication can also be provided using the `<pub-date>`/`<month>` and `<pub-date>`/`<day>` elements.  If the month and day are not provided they will both default to 01. If the month and day are provided they must be a 2 digit number e.g. `<month>`02`</month>` and `<day>`08`</day>`
-`<book-id>`	@book-id-type="doi"	Used to provide the DOI of the book. The Edify loader is configured by default to use the DOI to generate the unique identifier for a book. If the use of a different element for the unique identifier has been agreed between the publisher and Ingenta then the provision of this element can be optional.
+Element | Required attributes | Notes
+----- | ----- | -----
+`<book-title>` | | This must be provided as a child of the `<book-title-group>` element.
+`<pub-date>`/`<year>` | | The year of publication. This must be a 4 digit year only for example `<pub-date>``<year>`2018`</year>``</pub-date>`. The month and day of publication can also be provided using the `<pub-date>`/`<month>` and `<pub-date>`/`<day>` elements.  If the month and day are not provided they will both default to 01. If the month and day are provided they must be a 2 digit number e.g. `<month>`02`</month>` and `<day>`08`</day>`
+`<book-id>` | @book-id-type="doi" | Used to provide the DOI of the book. The Edify loader is configured by default to use the DOI to generate the unique identifier for a book. If the use of a different element for the unique identifier has been agreed between the publisher and Ingenta then the provision of this element can be optional.
 .
 
 The following optional elements are supported within the `<book-meta>` element.
 
-`<subtitle>`	
-The subtitle of the book. This must be provided as a child of the `<book-title-group>` element.
-`<abstract>`	
-The description of the book.
-
-While this is not a mandatory element Ingenta recommends that an abstract is provided to improve discoverability of the content.
-
-`<kwd-group>`	
-The keywords for a book. Please use a `<kwd>` element for each keyword.
-`<contrib-group>`	
-Please refer to the Contributors section
-`<isbn>`	@publication-format	Please refer to the ISBNs section
-`<self-uri>`	
-Please refer to the Full text section
-`<edition>`	
-Used to provide the edition of the book
-`<permissions>`	
-Please refer to the Permissions section.
-`<book-page-count>`	
-Must be provided within the `<counts>` element. Used to provide the number of pages of the book.
+Element | Required attributes | Notes
+----- | ----- | -----
+`<subtitle>` | | The subtitle of the book. This must be provided as a child of the `<book-title-group>` element.
+`<abstract>` | | The description of the book. While this is not a mandatory element Ingenta recommends that an abstract is provided to improve discoverability of the content.
+`<kwd-group>` | | The keywords for a book. Please use a `<kwd>` element for each keyword.
+`<contrib-group>` | | Please refer to the Contributors section
+`<isbn>` | @publication-format | Please refer to the ISBNs section
+`<self-uri>` | | Please refer to the Full text section
+`<edition>` | | Used to provide the edition of the book
+`<permissions>` | | Please refer to the Permissions section.
+`<book-page-count>` | | Must be provided within the `<counts>` element. Used to provide the number of pages of the book.
 
 ## Book table of contents
 The table of contents within the book on the website is dynamically generated using the `<book-part>` elements within the book. Where the sections and chapters are provided within a single book XML, the order in which the `<book-part>` elements are provided will be used to determine the ordering within the TOC.
 
 ## Book body
-This content is provided under the `<book-body>` element. The book body includes parts(sections) and chapters. Chapters may or may not belong to sections. Book sections and chapters are tagged using the `<book-part>` element within `<book-body>`. The @book-part-type>` attribute is used to indicate whether the book part is a Section or a Chapter.The value of the @book-part-type attribute must be "part" for a Section and "chapter" for a Chapter.
+This content is provided under the `<book-body>` element. The book body includes parts(sections) and chapters. Chapters may or may not belong to sections. Book sections and chapters are tagged using the `<book-part>` element within `<book-body>`. The @book-part-type>` attribute is used to indicate whether the book part is a Section or a Chapter. The value of the @book-part-type attribute must be "part" for a Section and "chapter" for a Chapter.
 
 Unless alternative identifiers have been agreed between the publisher and Ingenta, the `<book-part>` element must have an @id attribute which must be unique and is used to construct the URL for the section and chapter.
 
@@ -106,8 +101,9 @@ The `<book-part>` element must have an @id attribute which is used as default by
 
 Section level metadata is provided within the `<book-part-meta>` child of the `<book-part>` element. The table below describes the mandatory children of the `<book-part-meta>` element for sections
 
-`<title>`	
-This must be provided as a child of the `<title-group>` element which in turn must be a child of the `<book-part-meta>` element. The @xml:lang attribute can be used to indicate the language
+Element | Required attributes | Notes
+----- | ----- | -----
+`<title>` | | This must be provided as a child of the `<title-group>` element which in turn must be a child of the `<book-part-meta>` element. The @xml:lang attribute can be used to indicate the language
 
 ## Chapter level metadata
 Chapter metadata is provided through the `<book-part>` set of elements where the @book-part-type attribute is specified with a value of "chapter".
@@ -116,27 +112,22 @@ The `<book-part>` element must have an @id attribute which is used as default by
 
 Chapter level metadata is provided within the `<book-part-meta>` child of the `<book-part>` element. The table below describes the mandatory children of the `<book-part-meta>` element.
 
-`<title>`	
-This must be provided as a child of the `<title-group>` element which in turn must be a child of the `<book-part-meta>` element. The @xml:lang attribute can be used to indicate the language.
+Element | Required attributes | Notes
+----- | ----- | -----
+`<title>` | This must be provided as a child of the `<title-group>` element which in turn must be a child of the `<book-part-meta>` element. The @xml:lang attribute can be used to indicate the language.
 
 The following optional elements are supported within the book-part-meta element.
 
-`<abstract>`	
-Used to provide the abstract of the chapter. Use the @xml:lang attribute to denote the language
-`<fpage>`	
-Starting page of the chapter
-`<lpage>`	
-Ending page of the chapter
-`<elocation-id>`	
-Replaces starting and end page for electronic-only publications
-`<permissions>`/`<copyright-statement>`	
-Copyright statement for the chapter
-`<contrib-group>`	
-Please refer to the Contributors section
-`<kwd-group>`	
-Keywords for the chapter. Please use a `<kwd>` element for each keyword.
-`<self-uri>`	
-Please refer to the Full text section
+Element | Required attributes | Notes
+----- | ----- | -----
+`<abstract>` | | Used to provide the abstract of the chapter. Use the @xml:lang attribute to denote the language
+`<fpage>` | | Starting page of the chapter
+`<lpage>` | | Ending page of the chapter
+`<elocation-id>` | | Replaces starting and end page for electronic-only publications
+`<permissions>`/`<copyright-statement>` | | Copyright statement for the chapter
+`<contrib-group>` | | Please refer to the Contributors section
+`<kwd-group>` | | Keywords for the chapter. Please use a `<kwd>` element for each keyword.
+`<self-uri>` | | Please refer to the Full text section
 
 ## References
 References need to be tagged at as granular a level as possible to enable Edify to query systems such as Crossref for matches for the references and display links for those references on the website.
@@ -209,27 +200,18 @@ The contributor name information must be provided within the `<name>` set of ele
 
 The following elements are supported within the `<contrib>` element.
 
-`<name>`/`<given-names>`	
+Element | Required attributes | Notes
+----- | ----- | -----
+`<name>`/`<given-names>` | | 
+`<name>`/`<surname>` | | 
+`<name>`/`<prefix>` | | 
+`<name>`/`<suffix>` | | 
+`<email>` | | 
+`<xref>` | @ref-type="aff" AND @rid | This element is used to point to an affiliation. The @xref-type attribute indicates that the xref is for an affiliation. The @rid attribute is used to provide the list of IDs of the affiliation `<aff>` elements referred to, As per the BITS specification this is the recommended way of tagging affiliations for contributors. The target `<aff>` element must be in the same XML file as the `<contrib>` and `<xref>`.
+`<contrib-id>` | @contrib-id-type="orcid" or @authenticated="true" OR @authenticated="false" | This indicates the ORCID for the contributor. The URL of the ORCID must be provided as the body of the `<contrib-id>` element.
+`<aff>` | | This element can be used to tag the affiliation for the contributor. However as per the BITS specification the use of the `<xref>` element as mentioned above is recommended.
 
-`<name>`/`<surname>`	
-
-`<name>`/`<prefix>`	
-
-`<name>`/`<suffix>`	
-
-`<email>`	
-
-`<xref>`	@ref-type="aff" AND @rid	This element is used to point to an affiliation. The @xref-type attribute indicates that the xref is for an affiliation. The @rid attribute is used to provide the list of IDs of the affiliation `<aff>` elements referred to, As per the BITS specification this is the recommended way of tagging affiliations for contributors. The target `<aff>` element must be in the same XML file as the `<contrib>` and `<xref>`.
-`<contrib-id>`	
-@contrib-id-type="orcid"
-
-@authenticated="true" OR @authenticated="false"
-
-This indicates the ORCID for the contributor. The URL of the ORCID must be provided as the body of the `<contrib-id>` element.
-
-`<aff>`	
-This element can be used to tag the affiliation for the contributor. However as per the BITS specification the use of the `<xref>` element as mentioned above is recommended.
-Example contributor markup is as follows
+Example contributor markup is as follows:
 
 ```
 <contrib-group>
@@ -242,7 +224,7 @@ Example contributor markup is as follows
         </name>
         <xref ref-type="aff" rid="aff1"><sup>1</supp></xref>
     </contrib>
-    <aff id="aff1"><sup>1</sup>`Ingenta, Oxford, OX4 2HU`</aff>
+    <aff id="aff1"><sup>1</sup>Ingenta, Oxford, OX4 2HU</aff>
 </contrib-group>
 ```
 
