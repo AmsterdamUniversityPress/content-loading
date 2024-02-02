@@ -9,7 +9,7 @@ how to load content onto AUP Online?
 - [JATS](https://amsterdamuniversitypress.github.io/content-loading/jats)
 - [Conference Proceedings](https://amsterdamuniversitypress.github.io/content-loading/conferenceproceedings)
 - [Media](https://amsterdamuniversitypress.github.io/content-loading/media)
-- [Content Identifiers](https://amsterdamuniversitypress.github.io/content-loading/access)
+- [Content Identifiers](https://amsterdamuniversitypress.github.io/content-loading/contentidentifiers)
 
 ## planned pages
 
