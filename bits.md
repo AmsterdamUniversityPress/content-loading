@@ -1,6 +1,12 @@
 # BITS
 
 ## Introduction
+- Books on AUP Online (Ingenta Edify Platform) must be in BITS.
+- The core publication unit is the chapter, not the book as a whole.
+- Currently, content is in PDFs, with the BITS only containing metadata
+
+
+<!--
 The guidelines given below pertain to the Books Interchange Tag Suite (BITS) version 2.0 as the format for loading book and chapter XML content into Ingenta Edify. Supplied XML content must be valid against the NISO BITS version 2.0 tag set. The guidelines supplement the BITS documentation.
 
 Due to the size of the BITS tag set, Edify does not accommodate all features available in the tag set. This document describes the Edify implementation of the BITS tag set. Content that is valid against this specification will also be valid against the BITS tag set, but the reverse is not necessarily true.
@@ -12,8 +18,9 @@ Note: Please note that for clarity in this document, elements have been specifie
 ## Content formats
 Edify supports book XML in two forms
 
-Fully tagged full text XML with or without PDFs - This is our recommended format.
-Metadata-only XML - This is suitable for content available only in PDF format without any full text XML.
+- Fully tagged full text XML with or without PDFs - This is our recommended format.
+- Metadata-only XML - This is suitable for content available only in PDF format without any full text XML.
+
 Book metadata for both forms must be complete as described here.
 
 Guidelines regarding body tagging do not apply to metadata-only XMLs.
@@ -34,14 +41,15 @@ Example:
 `<!DOCTYPE book PUBLIC "-//NLM//DTD BITS Book Interchange DTD v2.0 20151225//EN" "BITS-book2.dtd">`
 
 The XML must use UTF-8 as the character encoding to ensure that characters are translated properly upon import into the Edify database. Content XML may also contain numeric character references (e.g. &#345; or &#x159;). Predefined entities for the ampersand, less-than, and greater-than should be used where the intent is to display the actual characters ampersand (`&`), less-than (`<`), or greater-than (`>`) respectively; the predefined entities should not be used where those characters are part of markup or encodings.
+-->
 
 ## Book file packaging structure
-Content for a book must be sent in a single zip file to the specified SFTP location.
-The content loading pipeline accepts either a zip file for a book with one XML file for the book and chapters with supporting PDFs, images etc. OR one XML file per chapter with the supporting PDFs, images etc. A combination of the two is not supported. 
-All chapters supplied within a zip file must belong to the same book.
-The name of the zip and files within the zip must be one word without spaces.
-If the files within the zip are supplied within folders, the file names must be unique across the zip.
-Names of all the files within a zip must be unique.
+1. Content for a book must be sent in a single zip file to the specified SFTP location.
+2. The content loading pipeline accepts either a zip file for a book with one XML file for the book and chapters with supporting PDFs, images etc. OR one XML file per chapter with the supporting PDFs, images etc. A combination of the two is not supported. 
+3. All chapters supplied within a zip file must belong to the same book.
+4. The name of the zip and files within the zip must be one word without spaces.
+5. If the files within the zip are supplied within folders, the file names must be unique across the zip.
+6. Names of all the files within a zip must be unique.
 
 ## Content identifiers
 Every book, chapter and media object (e.g. figure, table, multimedia) in the XML must have a unique immutable identifier which is suitable for constructing a URL.
@@ -59,6 +67,20 @@ Table | table-wrap/@id
 Other Media | media/@id
 
 Please note that the above defaults can be configured to pick up identifiers from other elements in the XML as long as the identifier values satisfy the above constraints.
+
+### ISBNs
+The `<isbn>` element is used to designate the ISBN of the book. Please use the @publication-format attribute to indicate whether the ISBN is for the print or electronic version of the book. `<isbn>` elements without the @publication-format attribute will be ignored.
+
+The following markup will designate the print ISBN
+
+`<isbn publication-format="print">...</isbn>`
+
+The following markup will designate the electronic ISBN
+
+`<isbn publication-format="electronic">...</isbn>`
+
+## Cover image
+`<self-uri xlink:role="http://pub2web.metastore.ingenta.com/ns/coverImage" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="10.5117_9788447874422_cover.jpg"/>`
 
 ## Book level metadata
 This metadata is contained within the `<book-meta>` element. This element is always required by the Edify loading system. If the book zip file contains separate XMLs per chapter, you must ensure that the book metadata is provided consistently in every XML.
@@ -237,23 +259,5 @@ For example
  
 `<self-uri content-type="epub" xlink:href="abc.epub" />`
 
-
-## ISBNs
-The `<isbn>` element is used to designate the ISBN of the book. Please use the @publication-format attribute to indicate whether the ISBN is for the print or electronic version of the book. `<isbn>` elements without the @publication-format attribute will be ignored.
-
-The following markup will designate the print ISBN
-
-`<isbn publication-format="print">...</isbn>`
-
-The following markup will designate the electronic ISBN
-
-`<isbn publication-format="electronic">...</isbn>`
-
-## Figures and graphics
-Please refer to XML guidelines for media objects
-
-## Tables
-Please refer to XML guidelines for media objects 
-
-## MathML
-Please refer to MathML guidelines
+## Tables, figures, and graphics
+Please refer to [media](media.md)
