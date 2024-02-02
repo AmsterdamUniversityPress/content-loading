@@ -151,6 +151,7 @@ Element | Required attributes | Notes
 `<kwd-group>` | | Keywords for the chapter. Please use a `<kwd>` element for each keyword.
 `<self-uri>` | | Please refer to the Full text section
 
+<!--
 ## References
 References need to be tagged at as granular a level as possible to enable Edify to query systems such as Crossref for matches for the references and display links for those references on the website.
 
@@ -167,9 +168,10 @@ For Crossref DOIs
 For PubMed IDs
 
 `<pub-id pub-id-type="pmid">`12345`</pub-id>`
+-->
 
 ## Permissions
-Please refer to Content Licensing XML Guidelines
+Are only possible at book level ?????????????????????
 
 ## Contributors
 Contributors can be provided at book level as well as individual chapter level.
