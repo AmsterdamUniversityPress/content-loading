@@ -43,14 +43,6 @@ Example:
 The XML must use UTF-8 as the character encoding to ensure that characters are translated properly upon import into the Edify database. Content XML may also contain numeric character references (e.g. &#345; or &#x159;). Predefined entities for the ampersand, less-than, and greater-than should be used where the intent is to display the actual characters ampersand (`&`), less-than (`<`), or greater-than (`>`) respectively; the predefined entities should not be used where those characters are part of markup or encodings.
 -->
 
-## Book file packaging structure
-1. Content for a book must be sent in a single zip file to the specified SFTP location.
-2. The content loading pipeline accepts either a zip file for a book with one XML file for the book and chapters with supporting PDFs, images etc. OR one XML file per chapter with the supporting PDFs, images etc. A combination of the two is not supported. 
-3. All chapters supplied within a zip file must belong to the same book.
-4. The name of the zip and files within the zip must be one word without spaces.
-5. If the files within the zip are supplied within folders, the file names must be unique across the zip.
-6. Names of all the files within a zip must be unique.
-
 ## Content identifiers
 Every book, chapter and media object (e.g. figure, table, multimedia) in the XML must have a unique immutable identifier which is suitable for constructing a URL.
 
@@ -263,3 +255,27 @@ For example
 
 ## Tables, figures, and graphics
 Please refer to [media](media.md)
+
+<!-- 
+Hi Crius Group, I apologise for the extreme delay in response to this ticket.
+There seems to be an implicit assumption in our book loader that DOIs will be lower case, we'll remove that the next release but in the meantime if you update the _FM and _BM DOIs to be lower case then the file will proceed through the loader.
+There's a further problem in the XML, the PDFs aren't actually referenced from it, you need to add in a self-uri element, e.g.
+                        <book-part-meta>
+                                <book-part-id book-part-id-type="doi">10.5117/9789463721943_fm</book-part-id>
+                                <title-group>
+                                        <title>Front matter</title>
+                                </title-group>
+                                <pub-date publication-format="print">
+                                        <year>2023</year>
+                                        <month>10</month>
+                                        <day>17</day>
+                                </pub-date>
+                                <fpage>1</fpage>
+                                <lpage>14</lpage>
+                                <self-uri xlink:href="10.5117_9789463721943_FM.pdf" content-type="pdf"/>
+                        </book-part-meta>
+If you make those changes then the book will load with each chapter being created with their own PDF.
+Regarding the cover image, wed don't support PDF cover images, you need to use an image file, include it in the zip file and reference it in the XML through self-uri like this:
+<self-uri xlink:role=http://pub2web.metastore.ingenta.com/ns/coverImage xmlns:xlink=http://www.w3.org/1999/xlink xlink:href="9789463721943-cover.png"/>
+The xlink:role attribute indicates that it is a cover image and the xlink:href attribute defines the name of the image file.
+-->
