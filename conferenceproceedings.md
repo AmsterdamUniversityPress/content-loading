@@ -133,18 +133,20 @@ The following elements are supported within the `<contrib>` element.
 
 Example contributor markup is as follows
 
-`<contrib-group>`
-    `<contrib contrib-type="author">`
-        `<name>`
-            `<surname>John</surname>`
-            `<given-names>Smith</given-names>`
-            `<prefix>Dr</prefix>`
-            `<suffix>Jr</suffix>`
-        `</name>`
-        `<xref ref-type="aff"` `rid="aff1"><sup>1</supp></xref>`
-    `</contrib>`
-    `<aff` `id="aff1"><sup>1</sup>Ingenta, Oxford, OX4` `2HU</aff>`
-`</contrib-group>`
+```xml
+<contrib-group>
+    <contrib contrib-type="author">
+        <name>
+            <surname>John</surname>
+            <given-names>Smith</given-names>
+            <prefix>Dr</prefix>
+            <suffix>Jr</suffix>
+        </name>
+        <xref ref-type="aff"` `rid="aff1"><sup>1</supp></xref>
+    </contrib>
+    <aff` `id="aff1"><sup>1</sup>Ingenta, Oxford, OX4` `2HU</aff>
+</contrib-group>
+```
 
 ### Tagging affiliation information
 
@@ -192,7 +194,7 @@ For example
     `</contrib>`
 `</contrib-group>`
 
-##*Keywords
+## Keywords
 
 You can define keywords for a paper within the XML using the **`kwd`** element. Each keyword must be specified in a separate **`kwd`** element. The **`kwd`** elements are enclosed within a **`kwd-group`** element. For example
 
@@ -228,17 +230,9 @@ The following paper publication history dates are supported
 
 Please note that for a date type, only one date must be provided.
 
-## Figures
+## Tables, Figures
 
-Please refer to [XML guidelines for media objects](https://confluence.ingenta.com/confluence/display/AUP/XML+guidelines+for+media+objects)
-
-## Tables
-
-Please refer to [XML guidelines for media objects](https://confluence.ingenta.com/confluence/display/AUP/XML+guidelines+for+media+objects)
-
-## MathML
-
-Please refer to [MathML guidelines](https://confluence.ingenta.com/confluence/display/AUP/MathML+guidelines)
+Please refer to [Media]()
 
 ## Paper titles
 
@@ -274,7 +268,7 @@ MathML elements must use “**`mml`**” as the namespace prefix to validate to 
 
 Edify uses the [MathJax](https://www.mathjax.org/) library to render the MathML content.
 
-## **References**
+## References
 
 -   References or bibliographic citations must be tagged inside a **`ref-list`** element in the back matter.
 -   Each reference must be in a separate **`ref`** element. 
@@ -340,6 +334,49 @@ This element is expected to contain bibliographic reference elements as well as 
 
 JATS 1.1 has deprecated this element. So Edify strongly recommends the use of element-citation or mixed-citation.
 
-## **Language codes**
+## Language codes
 
 Wherever language codes are required to be supplied in XML for the value of the **`@xml:lang`** attribute, they must be specified as as the two letter ISO code for the language. The code must be in lower case. For example **`<trans-abstract xml:lang="fr">...`**
+
+
+## Content loading for Conference Proceedings and papers
+
+Content for a proceeding must be sent in a single zip file to the specified SFTP location. The name of the zip and files within the zip must consist of alphanumeric characters and must not contain spaces or special characters. All papers supplied within a zip file must belong to the same proceeding. Names of all files supplied within a zip file must be unique, even if they are supplied within folders in the zip file. The names of image files and PDF files supplied within the XML must exactly match the file names of the supplied files within the zip. The file names within the XML must not contain folder names and must be provided with the extensions. 
+
+While setting up SFTP access through Filezilla, please make sure to set the port number as 22 (the standard SFTP port).
+
+Environment	SFTP Host	Username	Password	Input directory
+QA	aup-sftp.ingenta.com	aupqa-sftp	7HC0.vAstSg?	autoprocessing/aup/conference-papers-live/input
+LIVE	aup-sftp.ingenta.com	aup-sftp	mdho,+%m13TB	autoprocessing/aup/conference-papers-live/input
+
+
+## Creation of a new Conference Proceeding Series
+
+Conference Proceeding Series i.e. the containers for Conference Proceedings are created and managed manually in the site.
+
+For managing these series, please log in as super-administrators or as administrators with content creation privileges.
+
+## Creation of a new series
+
+A new series must be created before you start supplying proceedings under that series.
+
+Please access the homepage of the publisher e.g. https://qa.aup-online.com/content/aup in the QA environment. When you hover over the left side "wrench" icon, it will expand to show you content management links in a tools menu. Please click on the "Create new Conference Proceedings Serial" link highlighted in the screenshot below.
+
+This will open a popup window with a form for creating a new series - screenshot below. Key notes regarding filling up the form are provided below the screenshot.
+
+In the ID field, please enter proceedings/<e-ISSN of the series> e.g. proceedings/03007995
+
+The value of the e-ISSN must exactly match the value provided in <issn pub-type="electronic"> element in the proceedings XMLs
+
+An example of the value that must be provided in the field is in the screenshot below.
+
+Another key value is the RDF Type of the Proceeding Series. This is a dropdown field. For this field, please select the Conference Proceedings Serial value. Example screenshot below.
+
+After filling in the above and all the mandatory values, please click on the "Create" button to create the series.
+
+## Editing an existing series
+
+For changing metadata for an existing series, please navigate to the homepage of the series and hover over the "wrench" icon on the left. It will expand to show you links to manage the series. Click on the "Edit Conference Proceedings Serial" link highlighted in the screenshot below. This will open a popup form with metadata for that series.
+
+
+
