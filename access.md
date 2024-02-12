@@ -60,7 +60,7 @@ Example from `10.5117.QUE2022.1.001.KLEI`:
 <copyright-statement>&#x00a9; Ru Klein</copyright-statement>
 <copyright-year>2022</copyright-year>
 <copyright-holder>Ru Klein</copyright-holder>
-<license license-type="open">
+<license license-type="open-access">
 <license-p>This is an open access article distributed under the terms of the CC BY-NC 4.0 license. <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0</ext-link></license-p>
 </license>
 </permissions>
@@ -70,6 +70,8 @@ This is displayed as follows on the platform:
 ```
 © Ru Klein. This is an open access article distributed under the terms of the CC BY-NC 4.0 license. http://creativecommons.org/licenses/by/4.0
 ```
+
+<!-- in reality, this works differently. the article journal actually reads `<license license-type="open">` but when I tried that with a book it failed -->
 
 ### the other elements in `<permissions>`
 These elements are NOT nested and NOT (?) mandatory.
