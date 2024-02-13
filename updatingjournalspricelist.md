@@ -12,7 +12,7 @@ Note: this only works for the live site. (Because there is no appropriate folder
 4. Change the URL, for example from `https://www.aup-online.com/upload/GeneralDocs/2023AUPJournalsPriceListTEST.pdf` to `https://www.aup-online.com/upload/GeneralDocs/2024AUPJournalsPriceListTEST.pdf`. Make sure the URL corresponds to the file name!
 5. Save and publish.
 
-## 2. uplopad document
+## 2. upload document
 
 1. Go to the live site sFTP and login as AUP (not as typesetter)
 2. Upload the document into the `GeneralDocs` folder in the `upload` folder. Presto!
