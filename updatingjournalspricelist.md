@@ -7,8 +7,8 @@ Note: this only works for the live site. (Because there is no appropriate folder
 ## 1. edit web page
 
 1. Go to the [web page in question](https://qa.aup-online.com/how-to-subscribe) and log in as site admin.
-2. Click on the edit symbol below the text on the page. (This symbol is easily overlooked so look well).
-3. Edit the text. To this in HTML so you know what you are doing.
+2. Click on the edit symbol below the text on the page. (This symbol is easily overlooked so look closely).
+3. Edit the text. Do this in HTML so you know what you are doing.
 4. Change the URL, for example from `https://www.aup-online.com/upload/GeneralDocs/2023AUPJournalsPriceListTEST.pdf` to `https://www.aup-online.com/upload/GeneralDocs/2024AUPJournalsPriceListTEST.pdf`. Make sure the URL corresponds to the file name!
 5. Save and publish.
 
