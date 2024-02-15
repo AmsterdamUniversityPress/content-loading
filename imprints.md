@@ -15,9 +15,14 @@ This is on QA:
 
 It is _not_ possible to "change" a product's publisher after it has been published on AUP Online. This means you have to assign it a publisher at publication time. The only way around this is to ask Ingenta to do it manually. Do this in emergencies only.
 
-1. create a publishers
+1. create a publisher
 2. create publications "under" the publisher, manually onsite or via the XML
 
+currently, only books and journals seem to habve the publisher mentioned, but not Conference Proceedings and Conference Proceedings Serial ??
+
+it's all HTML so you can do `<strong>Hanu</strong> <span style="color: rgb(209, 72, 65);">Publisher 1</span>`
+
+I uploaded an XML file with the test publisher this morning... it loaded correctly but I don't see it on the site... also, the test publiusher is not yet added to the search facet... check again tomorrow....
 
 
 
