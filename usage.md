@@ -41,7 +41,14 @@ Another [page]([https://confluence.ingenta.com/confluence/display/AUP/User+Manag
 You can see abstract views for content through the following reports in the publisher statistics list.
 
 ## SUSHI
+SUSHI is a protocol for the automated retrieval of COUNTER usage data (via APIs). 
+
 https://www.aup-online.com/help/sushi is a public-facing help page which describes COUNTER 5 SUSHI setup.
+
+See also
+
+- https://www.niso.org/standards-committees/sushi
+- https://app.swaggerhub.com/apis/COUNTER/counter-sushi_5_0_api/5.0.3
 
 ## COUNTER 5.1
 Ingenta is currently reviewing version 5.1 which becomes effective from January 2025.
