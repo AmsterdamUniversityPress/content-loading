@@ -22,7 +22,8 @@ The `xml` extension is replaced by `err` and two CB prefixes are added. (Meaning
 
 1. Missing contact data in the header. See [CB documentation](https://userguidescb.atlassian.net/wiki/spaces/BERDEFINTERN/pages/364998/Berichtdefinitie+ONIX+3.0+aanleveren+-+Publisher+to+CB#BerichtdefinitieONIX3.0(aanleveren)-PublishertoCB-H.4SenderName). Specifically, the element `<ContactName>` is empty which is not XSD valide.
 
-`
+```xml
+
 <Header>
   <Sender>
     <SenderIdentifier>
@@ -33,7 +34,8 @@ The `xml` extension is replaced by `err` and two CB prefixes are added. (Meaning
     <ContactName/>
     <EmailAddress>info@aup.nl</EmailAddress>
   </Sender>
- `
+
+```
 
 #### important lead
 
