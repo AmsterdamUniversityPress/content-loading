@@ -27,6 +27,9 @@ how to load content onto AUP Online?
 - [Resources](https://amsterdamuniversitypress.github.io/content-loading/resources)
 
 
+## not related to loading (knowledge base)
+- [ONIX](https://amsterdamuniversitypress.github.io/content-loading/ONIX)
+
 ## planned pages
 
 - XML instructions per content type (journals, processings, books, magazines)
