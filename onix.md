@@ -52,3 +52,101 @@ Look like this:
 AUP has CB ftp account 7400597
 AUP - or rather Walburg Pers Educatief - has CB RelatieID 7200421
 -->
+
+## Zeno (SPECULATION, WIP)
+"Sending" an ONIX30 message from Zeno is in fact **exporting** an ONIX30 message and then placing it on the ftp. (Unless that is done automatically?). It works as follows:
+
+1. select approproate fields in Zeno
+2. export in appropriate format (`.onx`)
+3. find the file in the ??? folder and do ???
+
+### an important table
+
+Veld in BooksOnix	|	Veld in Zeno	|	Locatie Zeno
+----- | ----- | -----
+zeno_a_pk 	|	Nummer	|	Publicaties
+verschijningsdatum 	|	Versch. Datum	|	Publicaties
+aant_pag 	|	Pagina's	|	Publicaties - Tabblad Specificatie
+afm_h 	|	Formaat -> Hoogte	|	Publicaties - Tabblad Specificatie
+afm_b 	|	Formaat -> Breedte	|	Publicaties - Tabblad Specificatie
+afm_imperial_h 	|	Formaat -> Hoogte	|	Publicaties - Tabblad Specificatie
+afm_imperial_b 	|	Formaat -> Breedte	|	Publicaties - Tabblad Specificatie
+fonds_asw 	|	Fonds code	|	Publicaties - Tabblad Groepen
+relatie_nr 	|	Relatienummer	|	Relaties (via gekopelde royalties)
+relatie_titel_code 	|	Titulatuur code	|	Relaties (via gekopelde royalties)
+relatie_titel_achter 	|	Titulatuur achter naam	|	Relaties (via gekopelde royalties)
+relatie_voornaam 	|	Voornaam	|	Relaties (via gekopelde royalties)
+relatie_voorletter 	|	Voorletter	|	Relaties (via gekopelde royalties)
+relatie_achternaam 	|	Achternaam	|	Relaties (via gekopelde royalties)
+relatie_tussenvoeg 	|	Tussenvoegsels	|	Relaties (via gekopelde royalties)
+relatie_rol 	|	Rol	|	Royalty ('Hoofdauteur', 'Auteur','Subsidieverstrekker', 'Overig','Vertaler','Illustrator', 'Redacteur'
+relatie_cv_en 	|	CV auteur ENG	|	Relaties - Tabblad Overig
+relatie_cv_nl 	|	CV auteur NED	|	Relaties - Tabblad Overig
+codegroep 	|	Codering -> Groep	|	Publicaties - Tabblad Coderingen
+codering_code 	|	Codering -> Code	|	Publicaties - Tabblad Coderingen
+codering_naam 	|	Codering -> Naam	|	Publicaties - Tabblad Coderingen
+afwerking 	|	Bindwijze/Afwerking	|	Publicaties - Tabblad Specificatie
+dnummer 	|	D-nummer (uniek nummer voor artikelen zonder ISBN)	|	<Niet zichtbaar in scherm> 
+druk 	|	Druk/editie	|	Publicaties - Druk
+verk_prijs_eur_incl_btw 	|	Verkoopprijs incl. BTW	|	Publicaties - Prijs excl. BTW
+verk_prijs_eur_excl_btw 	|	Verkoopprijs excl. BTW	|	Publicaties - Prijs incl. BTW
+valuta_code 	|	Valuta code	|	Publicaties - Tabblad Valuta
+valuta_prijs 	|	Valuta prijs	|	Publicaties - Tabblad Valuta
+gewicht 	|	Gewicht (gram)	|	Publicaties - Tabblad Specificatie
+illustraties 	|	Illustraties	|	Publicaties - Tabblad Specificatie
+ill_zwart_wit 	|	Illustratie - tekenen	|	Publicaties - Tabblad Specificatie
+ill_kleur 	|	Illustratie - scannen	|	Publicaties - Tabblad Specificatie
+imprint 	|	Redactie	|	Publicaties - Tabblad Specificatie
+eigenaar_nr 	|	Relatienummer	|	Relaties (via gekoppelde relatie Eigenaar zeno)
+eigenaar_naam 	|	Bedrijfsnaam	|	Relaties (via gekoppelde relatie Eigenaar zeno)
+isbn 	|	ISBN/EAN nummer	|	Publicaties
+jpg_omslag 	|	Auteurs omslag	|	Publicaties - Tabblad Specificatie
+lead_ws_en 	|	Lead website (Engels)	|	Publicaties - Tabblad Overig
+lead_ws_nl 	|	Lead website (Ned)	|	Publicaties - Tabblad Overig
+plan_stat_status_code 	|	Planning status code	|	Planningen - Tabblad Planningstatus
+subtitel 	|	Subtitel	|	Publicaties
+trefwoorden 	|	Trefwoorden	|	Publicaties - Tabblad Overig
+drukwerk_binnen 	|	Drukwerk binnen	|	Publicaties - Tabblad Specificatie
+drukwerk_omslag 	|	Drukwerk omslag	|	Publicaties - Tabblad Specificatie
+begeleider_label 	|	Begeleider redactie, productie, overig 1, overig 2	|	Constantenkaart (Begeleider redactie, productie, overig 1, overig 2)
+opmerkingen 	|	Opmerkingen	|	Publicaties - Tabblad Specificatie
+laminaat 	|	Gelamineerd	|	Publicaties - Tabblad Specificatie
+papier_binnen 	|	Papier binnen	|	Publicaties - Tabblad Specificatie
+subs_vers_nr 	|	Relatienummer	|	Relaties (via subsidieverstrekker)
+subs_vers_titel_code 	|	Titulatuurcode	|	Relaties (via subsidieverstrekker)
+subs_vers_titel_achter 	|	Titulatuur achter naam	|	Relaties (via subsidieverstrekker)
+subs_vers_voornaam 	|	Voornaam	|	Relaties (via subsidieverstrekker)
+subs_vers_voorletter 	|	Voorletter	|	Relaties (via subsidieverstrekker)
+subs_vers_achternaam 	|	Achternaam	|	Relaties (via subsidieverstrekker)
+subs_vers_tussenvoeg 	|	Tussenvoegsels	|	Relaties (via subsidieverstrekker)
+subs_vers_rol 	|	Rol	|	Relaties (via subsidieverstrekker)
+subs_vers_toelichting 	|	Toelichting	|	Relaties (via subsidieverstrekker)
+versch_vorm 	|	Verschijningsvorm	|	Publicaties - Tabblad Groepen
+status 	|	Status	|	Publicaties
+quotes 	|	Quotes 	|	Publicaties - Tabblad Overig
+rechten 	|	Opmerkingen rechten	|	Publicaties - Tabblad Specificatie
+bullets_cat 	|	Bullets cat.	|	Publicatie - Tabblad Overig
+serie 	|	Serie	|	Publicaties - Tabblad Groepen
+deel 	|	Deel	|	Publicaties - Tabblad Groepen
+taal 	|	Taal	|	Publicaties - Tabblad Groepen
+tekst_ws_en 	|	Tekst website ENG	|	Publicaties - Tabblad Overig
+tekst_ws_nl 	|	Tekst website NL	|	Publicaties - Tabblad Overig
+titel 	|	Titel	|	Publicaties
+inhoudsopgave 	|	Inhoudsopgave	|	Publicaties - Tabblad Groepen
+vellen 	|	Vellen	|	Publicaties - Tabblad Specificatie
+uitgever_nam 	|	Naam	|	Gebruikers (via Publicaties Uitgever)
+cat_pp_item_nr 	|	Catalogus pp en Item nr	|	Publicaties - Tabblad Overig
+project_code 	|	Project code	|	Publicaties - Tabblad Groepen
+technische_voorraad 	|	Vooraad	|	Publicaties - Tabblad Voorraad
+svs_nummer 	|	SVS nummer	|	Publicaties - Tabblad Groepen
+kortinggroep_code 	|	Kortinggroep code	|	Publicaties - Tabblad Groepen
+kortinggroep_naam 	|	Kortinggroep naam	|	Publicaties - Tabblad Groepen
+asw 	|	Asw codering	|	Publicaties - Tabblad Coderingen
+disciplines 	|	Disciplines	|	Publicaties - Tabblad Coderingen
+valuta_prijs_incl_btw 	|	Valuta prijs incl. BTW	|	Publicaties - Tabblad Valuta
+usd_prijs_incl_btw 	|	Valuta prijs alleen USD incl. BTW	|	Publicaties - Tabblad Valuta
+gbp_prijs_incl_btw 	|	Valuta prijs alleen GBP incl. BTW	|	Publicaties - Tabblad Valuta
+publicatie_type	|	Type	|	Publicaties - Tabblad Overig
+
+
+
