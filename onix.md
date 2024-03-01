@@ -20,7 +20,7 @@ The `xml` extension is replaced by `err` and two CB prefixes are added. (Meaning
 
 ### causes
 
-1. Missing contact data in the header. See [CB documentation](https://userguidescb.atlassian.net/wiki/spaces/BERDEFINTERN/pages/364998/Berichtdefinitie+ONIX+3.0+aanleveren+-+Publisher+to+CB#BerichtdefinitieONIX3.0(aanleveren)-PublishertoCB-H.4SenderName). Specifically, the element `<ContactName>` is empty which is not XSD valid. Or, as CB puts it, "has a ‘No-flag’" - is this the same?
+1. Missing contact data in the header. See [CB documentation](https://userguidescb.atlassian.net/wiki/spaces/BERDEFINTERN/pages/364998/Berichtdefinitie+ONIX+3.0+aanleveren+-+Publisher+to+CB#BerichtdefinitieONIX3.0(aanleveren)-PublishertoCB-H.4SenderName). Specifically, the element `<ContactName>` is empty which is not XSD valid. Or, as CB puts it, "has a ‘No-flag’" - is this the same? (I associate it with a Boolean Y/N).
 
 ```xml
 
