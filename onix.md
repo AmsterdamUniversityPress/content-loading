@@ -1,5 +1,42 @@
 # ONIX
 
+## uploading books onto CB
+This is a two-step process: first a metadata record is created, then the actual content is uploaded. The metadata record is an ONIX file and is created in Zeno and automatically sent to CB Online. 
+
+The upload in CB Online is a manual process. 
+
+### registring books at CB
+
+1. in Zeno, complete the record for the ebook (epub/e-pdf)
+2. in Zeno, set status to **Production**
+3. in Zeno, select **ONIX 3** (three dots top right) and **Verstuur naar CB** ("send to CB")
+4. in Zeno, confirm your choices in two pop-up windows
+
+At most 24 hours later, a record for the book is created in the CB Online environment. 
+
+### uploading books at CB Online
+Once the record is created, you can upload the book. 
+
+1. Go to [CB Online](https://cbonline.boekhuis.nl) and login
+2. Go to **Uitgeverij** ("Publisher"). Enter the book's e-isbn and click on the pencil to edit the data
+3. Go to e-Bookbestand > Wilt u het e-bookbestand vervangen > ja. Volg de instructies op.
+4. Go to bovenin naar Beschikbaarheid ("Availability"). All options need to be selected, except Google. **Make sure the Google option is not active or else the book content will be available on Google Books!** 
+5. Dan ga je boven in naar Metadata. > check of zowel voorplat als achterplat zijn upgeload. Is dit niet het geval dan graag alsnog doen.
+
+Note 1. Most books uploaded to CB are not Open Acces and so will not be available on OAPEN. However, for books that _Aae_ OA, all bookshops need to be deselected, **except AUP**!
+
+Note 2. Bij een bijdruk hoeft enkel het ebookbestand opnieuw geupload.
+
+### ONIX problems
+Als de ONIX er niet doorkomt bij het CB is de oorzaak vaak:
+
+-	Zeno-record staat niet op Productie
+-	Verschijningsdatum is een zaterdag, zondag of maandag
+-	Er zit een harde return in de titel of ondertitel die je in Zeno niet ziet. Je ziet hem wel als je hem kopieert en in Word plakt
+
+Als alles goed staat maar de upload lukt toch niet dan graag melding maken bij Inge en verdere instructies afwachten.
+
+## dinges
 AUP uses ONIX to send product information to CB. ONIX files are sent from the Zeno ERM system (manually?) to a  CB ftp. The data are then ingested into CB Online (within 24 hrs).
 
 The current format is ONIX 3.0.
@@ -10,7 +47,9 @@ Apparently, sometimes an error is thrown in Zeno. In that case, no ONIX file ("O
 
 ## error 2
 
-Apparently, sometimes ONIX30 messages _are_ sent but "rejected" by CB. In that case, an error message is placed in the out folder of the ftp. The message disappear after a few days (?).
+Apparently, sometimes ONIX30 messages _are_ sent but "rejected" by CB. In that case, an error message is placed in the out folder of the ftp. The message disappears after a few days (?). 
+
+Apparently, the error messages are also sent to an AUP email address. Unfortunately, that address is defunct. How to change it?
 
 ### example
 
@@ -63,6 +102,7 @@ AUP - or rather Walburg Pers Educatief - has CB RelatieID 7200421
 3. find the file in the ??? folder and do ???
 
 ### an important table
+Fields in Zeno can have a different name from fields in CB Online. Here is a correspondence table.
 
 Veld in BooksOnix	|	Veld in Zeno	|	Locatie Zeno
 ----- | ----- | -----
@@ -88,7 +128,7 @@ codegroep 	|	Codering -> Groep	|	Publicaties - Tabblad Coderingen
 codering_code 	|	Codering -> Code	|	Publicaties - Tabblad Coderingen
 codering_naam 	|	Codering -> Naam	|	Publicaties - Tabblad Coderingen
 afwerking 	|	Bindwijze/Afwerking	|	Publicaties - Tabblad Specificatie
-dnummer 	|	D-nummer (uniek nummer voor artikelen zonder ISBN)	|	<Niet zichtbaar in scherm> 
+dnummer 	|	D-nummer (uniek nummer voor artikelen zonder ISBN)	|	\<Niet zichtbaar in scherm\> 
 druk 	|	Druk/editie	|	Publicaties - Druk
 verk_prijs_eur_incl_btw 	|	Verkoopprijs incl. BTW	|	Publicaties - Prijs excl. BTW
 verk_prijs_eur_excl_btw 	|	Verkoopprijs excl. BTW	|	Publicaties - Prijs incl. BTW
@@ -151,4 +191,43 @@ gbp_prijs_incl_btw 	|	Valuta prijs alleen GBP incl. BTW	|	Publicaties - Tabblad 
 publicatie_type	|	Type	|	Publicaties - Tabblad Overig
 
 
+<!--
 
+ONIX bestanden
+Vanuit Zeno kan van een publicatie een ONIX bestand gemaakt worden met gegevens van die publicatie. Daarmee kan de publicatie bij het CB ingevoerd worden. Nu kan het voorkomen dat de codering in Zeno afwijkt van wat er in het Cb nodig is; daarvoor kunnen vertalingen aangemaakt worden. In dit bestand staan de volgende gegevens:
+-	ISBN
+-	Titel
+-	Subtitel
+-	Verschijningsvorm: ProductForm in Onix. Er is wel een vertaling nodig tussen de Zeno codering en de ONIX codering
+-	Hoogte/breedte/dikte in mm
+-	Gewicht in gram
+-	Aantal pagina’s
+-	Fonds: Productclassification met type 06 in ONIX: Er is wel een vertaling nodig tussen de Zeno codering en de ONIX codering
+-	Serie en deel in de serie
+-	Auteurs, vertalers, illustrators, redacteuren
+o	Van auteurs kan een biografie worden meegegeven Dat kan een biografie zijn die bij een auteur opgeslagen is, dan is dit bij elk boek voor deze auteur dezelfde biografie, of bij een boek, dan geef je bij een boek opnieuw de biografie van de auteur(s) op 
+-	Druknummer
+-	Taal: Er is wel een vertaling nodig tussen de Zeno codering en de ONIX codering
+-	Indicatie ‘geïllustreerd’ of niet 
+-	NUR codering
+-	BIC codering
+-	BISAC codering
+-	Flaptekst (ONIX veld textType=02) (Zeno veld omschrijving, maar kan ook naar ander veld verwijzen)
+-	Boekbeschrijving (ONIX veld textType=05) (Zeno veld Doelgroep, maar kan ook naar ander veld verwijzen)
+-	Inhoudsopgave (ONIX veld textType=03) (Zeno veld Toelichting, maar kan ook naar ander veld verwijzen)
+-	Uitgever 
+-	Status
+-	Verschijningsdatum
+-	Koppelingen naar ander boek (is vertaling van, is ebook van, is POD vervanging van)
+-	Verkoopprijs
+-	AWS code
+-	BTW code
+
+Vertalingen
+In de ONIX bestanden worden soms specifieke codes gevraagd en de codes in Zeno zijn vaak anders. Voor de volgende entiteiten is het mogelijk de Zeno code te vertalen naar een ONIX code:
+-	Fonds
+-	Verschijningsvorm
+-	BTW
+-	Taal
+
+-->
