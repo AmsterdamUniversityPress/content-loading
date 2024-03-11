@@ -75,47 +75,41 @@ This is displayed as follows on the platform:
 
 
 ## free trial access
+How to setp up a free trial on Edify?
 
-Ingenta Edify - Free Trial Setup
-Introduction
+### Introduction
 
 This document outlines the process of setting up free trials in Ingenta Edify through the site administration tools. Free Trials can be set up at multiple levels e.g., for individual issues or articles, or at journal level for all issues under the journal etc. The steps below refer to setting up a free trial for an article, but they can be used at other levels too.
-Setting up a free trial
-Go to site.
-Navigate to an Article page e.g. https://qa.aup-online.com/content/journals/10.5117/TvAR2023.11.001.KORT
-Login as the site administrator.
-Hover over the 'wrench' icon button on left-hand side of the page as shown below.
 
-Click on "Manage prices for this article".
-This will open a popup window which will show existing free, Open Access, purchase and free trial licenses set up for that content item. Click on "Create new pricing & access rule".
-This will open a form with a drop down of pricing models as shown in the screenshot below.
+### Setting up a free trial
 
-Select Pricing Model > Free Trial. A form as per the screenshot below will be displayed.
+- Go to site.
+- Navigate to an Article page e.g. https://qa.aup-online.com/content/journals/10.5117/TvAR2023.11.001.KORT
+- Login as the site administrator.
+- Hover over the 'wrench' icon button on left-hand side of the page.
+- Click on "Manage prices for this article". This will open a popup window which will show existing free, Open Access, purchase and free trial licenses set up for that content item.
+- Click on "Create new pricing & access rule". This will open a form with a drop down of pricing models as shown in the screenshot below.
+- Select Pricing Model > Free Trial. A form will be displayed.
+- Enter the Trial validity i.e. From and To Date. 
+- Select the checkbox for 'Eligible user.'
+  - Select the radio button "All users" for a free trial available to everyone.
+  - Select the radio button "Selected users" to search for and select the users who should have access to the free trial. 
+- Fill in the Trial Name field. This is the display name for the trial.
+- Navigate to field "Trial duration."
+  - Select the first radio button for add duration for days.
+  - Select the second radio button to set the trial duration to be the same as the validity range defined in step 9.
+  - Select the third radio button to set the trial duration to be perpetual. 
+- Navigate to Applicability field. You can use this field to specify the types of users who can sign up for trials.
+  - Select the first checkbox to allow only institutions to sign up for the trial.   
+  - Select the second checkbox to allow only registered personal users to sign up for the trial.   
+  - Select the third checkbox to enable all users including guest users to sign up for the trial. Please note that this checkbox will be clickable only after selecting one of above checkboxes.
+- Select 'Requires approval' checkbox to set the free trial to be moderated i.e., to become active only after you approve it. Leaving the box unchecked means that users can start the trial as soon as they sign up for it without needing it to be approved.
+- Select 'Notification' checkbox to receive notifications of trials.
+- Enter Notification Email address to get an email notification when a free trial is started on a content. The Price Status box defaults to 'active' which means the trial becomes active as soon as it is saved. If you want to set up the trial in advance but do not want to make it active yet, then you can uncheck the box. To make the trial active later, you can edit the trial, check the box and save the changes.
+- Click on Save button.
+- Click on Close button.
 
-Enter the Trial validity i.e. From and To Date. 
-Select the checkbox for 'Eligible user.'
-    • Select the radio button "All users" for a free trial available to everyone.
-    • Select the radio button "Selected users" to search for and select the users who should have access to the free trial. 
-Fill in the Trial Name field. This is the display name for the trial.
-Navigate to field "Trial duration."
-    • Select the first radio button for add duration for days.
-    • Select the second radio button to set the trial duration to be the same as the validity range defined in step 9.
-    • Select the third radio button to set the trial duration to be perpetual. 
-Navigate to Applicability field. You can use this field to specify the types of users who can sign up for trials.
-    • Select the first checkbox to allow only institutions to sign up for the trial.   
-    • Select the second checkbox to allow only registered personal users to sign up for the trial.   
-    • Select the third checkbox to enable all users including guest users to sign up for the trial. Please note that this checkbox will be clickable only after selecting one of above checkboxes.
-Select 'Requires approval' checkbox to set the free trial to be moderated i.e., to become active only after you approve it. Leaving the box unchecked means that users can start the trial as soon as they sign up for it without needing it to be approved.
-Select 'Notification' checkbox to receive notifications of trials.
-Enter Notification Email address to get an email notification when a free trial is started on a content. 
-The Price Status box defaults to 'active' which means the trial becomes active as soon as it is saved. If you want to set up the trial in advance but do not want to make it active yet, then you can uncheck the box. To make the trial active later, you can edit the trial, check the box and save the changes.
-Click on Save button.
-Click on Close button.
 The option to sign up for a free trial will be visible on the homepage of the relevant content item(s). As an example, a link to sign up trial set up for an issue will be displayed on the homepage of the issue. Please see the screenshot below for an example of the trial sign-up link on an article page.
-
-
-
-
 
 ### the other elements in `<permissions>`
 These elements are NOT nested and NOT (?) mandatory.
