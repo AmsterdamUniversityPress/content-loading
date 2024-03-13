@@ -9,7 +9,7 @@ The site admin can create new:
 - Book
 - Conference Proceedings
 - Journal
-- Magazines
+- Magazine
 
 and also
 - Conference Proceedings Serial
@@ -31,7 +31,7 @@ Periodical | Periodical, Serial |
 
 ### Search pages and Content pages
 - there are Search pages and Content pages
-- Content pages can have filters and A-Z (so are not striclty separate from Search pages)
+- Content pages can have filters and A-Z (so are not strictly separate from Search pages)
 - Filtering on a content page does not alter the URL. Adding search parameter to a content page's URL (e.g. `https://qa.aup-online.com/content/books?value1=Book&option1=contentType`) does not alter the page
 
 ### Search pages individual items
