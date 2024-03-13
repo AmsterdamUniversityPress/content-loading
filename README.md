@@ -17,8 +17,8 @@ how to load content onto AUP Online?
 - [JATS](https://amsterdamuniversitypress.github.io/content-loading/jats)
 - [Loading](https://amsterdamuniversitypress.github.io/content-loading/loading)
 - [Media](https://amsterdamuniversitypress.github.io/content-loading/media)
-- [Personal data](https://amsterdamuniversitypress.github.io/personaldata)
-- [Publication types](https://amsterdamuniversitypress.github.io/publicationtypes)
+- [Personal data](https://amsterdamuniversitypress.github.io/content-loading/personaldata)
+- [Publication types](https://amsterdamuniversitypress.github.io/content-loading/publicationtypes)
 - [Updating  the journals price list](https://amsterdamuniversitypress.github.io/content-loading/updatingjournalspricelist)
 - [Usage](https://amsterdamuniversitypress.github.io/content-loading/usage)
 
