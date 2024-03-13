@@ -30,7 +30,7 @@ how to load content onto AUP Online?
 
 
 ## not related to loading (knowledge base)
-- [ONIX](https://amsterdamuniversitypress.github.io/content-loading/ONIX)
+- [ONIX](https://amsterdamuniversitypress.github.io/content-loading/onix)
 
 ## planned pages
 
