@@ -50,7 +50,7 @@ The site admin can set prices, discounts and offer codes for content items throu
 
 Percentage discount offer codes for books can be created through automated feeds _if this functionality has been configured in the site_. Similarly, setting or updating _all_ prices for a content type _needs the help of Ingenta_. There is a [page](https://confluence.ingenta.com/confluence/display/AUP/Discount+and+Offer+Codes+Documentation) in Ingenta's Confluence devoted to discounts.
 
-For a complete overview, see the [Price Management Tool]([https://confluence.ingenta.com/confluence/display/AUP/Ecommerce+Reports+Documentation](https://confluence.ingenta.com/confluence/display/AUP/Price+Management+Tool)) page on Ingenta's Confluence.
+For a complete overview, see the [Price Management Tool](https://confluence.ingenta.com/confluence/display/AUP/Price+Management+Tool) page on Ingenta's Confluence.
 
 ### reports
 eCommerce reports give a real-time view of ecommerce orders within the site. 
