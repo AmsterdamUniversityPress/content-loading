@@ -22,6 +22,7 @@ how to load content onto AUP Online?
 - [Proxy](https://amsterdamuniversitypress.github.io/content-loading/proxy)
 - [Publication types](https://amsterdamuniversitypress.github.io/content-loading/publicationtypes)
 - [Updating  the journals price list](https://amsterdamuniversitypress.github.io/content-loading/updatingjournalspricelist)
+- [Setting up access](https://amsterdamuniversitypress.github.io/content-loading/settingupaccess)
 - [Usage](https://amsterdamuniversitypress.github.io/content-loading/usage)
 
 ### imprints
