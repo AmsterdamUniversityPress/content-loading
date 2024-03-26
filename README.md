@@ -11,6 +11,7 @@ how to load content onto AUP Online?
 
 ### subjects
 - [Access](https://amsterdamuniversitypress.github.io/content-loading/access)
+- [Accessibility](https://amsterdamuniversitypress.github.io/content-loading/accessibility)
 - [BITS](https://amsterdamuniversitypress.github.io/content-loading/bits)
 - [Citations and References](https://amsterdamuniversitypress.github.io/content-loading/citationsreferences)
 - [Content Identifiers](https://amsterdamuniversitypress.github.io/content-loading/contentidentifiers)
