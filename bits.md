@@ -81,10 +81,9 @@ The table below describes the required elements within the `<book-meta>` element
 
 Element | Required attributes | Notes
 ----- | ----- | -----
-`<book-title>` | | This must be provided as a child of the `<book-title-group>` element.
-`<pub-date>`/`<year>` | | The year of publication. This must be a 4 digit year only for example `<pub-date>``<year>`2018`</year>``</pub-date>`. The month and day of publication can also be provided using the `<pub-date>`/`<month>` and `<pub-date>`/`<day>` elements.  If the month and day are not provided they will both default to 01. If the month and day are provided they must be a 2 digit number e.g. `<month>`02`</month>` and `<day>`08`</day>`
+`<book-title>` |  | This must be provided as a child of the `<book-title-group>` element.
+`<pub-date>`/`<year>` |  | The year of publication. This must be a 4 digit year only for example `<pub-date><year>2018</year></pub-date>`. The month and day of publication can also be provided using the `<pub-date>`/`<month>` and `<pub-date>`/`<day>` elements. If the month and day are not provided they will both default to 01. If the month and day are provided they must be a 2 digit number e.g. `<month>`02`</month>` and `<day>`08`</day>`
 `<book-id>` | @book-id-type="doi" | Used to provide the DOI of the book. The Edify loader is configured by default to use the DOI to generate the unique identifier for a book. If the use of a different element for the unique identifier has been agreed between the publisher and Ingenta then the provision of this element can be optional.
-.
 
 The following optional elements are supported within the `<book-meta>` element.
 
