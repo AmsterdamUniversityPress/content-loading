@@ -52,11 +52,11 @@ The Edify loader is pre-configured to use the following elements to create the i
 
 Type of content | XPath
 ----- | ----
-Book | /book/book-meta/book-id[@book-id-type="doi"]
-Chapter / Section | book-part[@book-part-type="chapter"]/@id
-Figure	fig/@id
-Table | table-wrap/@id
-Other Media | media/@id
+Book | `/book/book-meta/book-id[@book-id-type="doi"]`
+Chapter / Section | `book-part[@book-part-type="chapter"]/@id`
+Figure	| `fig/@id`
+Table | `table-wrap/@id`
+Other Media | `media/@id`
 
 Please note that the above defaults can be configured to pick up identifiers from other elements in the XML as long as the identifier values satisfy the above constraints.
 
