@@ -1,4 +1,4 @@
-# Access
+# License
 
 ## Access types
 Access types determine the conditions under which users can access and use the content. Subscribed means users need to be logged-in. OA and Free means users need not be logged-in. 
@@ -119,3 +119,12 @@ These elements are NOT nested and NOT (?) mandatory.
 3. `<copyright-holder>`
 
 The copyright statement is displayed below the abstract (or one-page PDF if there is no abstract) on the article or chapter page. Copyright year and copyrioght holder are NOT displayed. Make sure to include that information in the copyright statement.
+
+## JATs/BITS
+
+JATS has several elements that deal with the usage, permissions, and licensing. Some of these elements are taken from the NISO Access and License Indicators (ALI) 2015 Recommended Practice specification. The other element is JATS-specific and predates the NISO recommendation:
+
+- `<ali:free_to_read>` — This NISO ALI element is a simple flag whose presence indicates that the document is free-to-read, without making statements about any additional reuse rights or restrictions. Date attributes can specify when the document is free to be read.
+- `<ali:license_ref>` — This NISO ALI element points to a public license or waiver. By “public”, NISO means that the offer is generally and not privately offered. Such a license may be either human or machine-readable text that explains the terms of use or reuse for the content.
+- `<license>` — A JATS-specific element whose content describes a set of conditions under which the content may be used, accessed, and distributed. This element was provided to hold the license text. The 2015 NISO ALI recommendation is to store in the XML document a URI that points to the license instead of the full license text. For users who adopt the NISO ALI recommendation, the <license> element could be used to hold a short representation of the license, a sentence or two to be used for display. Alternatively, a publisher could choose not to implement NISO ALI and to put the text of the license in <license>.
+  The <license> element takes the `@xlink:href` attribute to point to the text of the license. However, the new NISO ALI element `<ali:license_ref>` performs the same pointing function. JATS best practice is to omit the `@xlink:href` attribute from `<license>` if a NISO ALI `<ali:license_ref>` is used.
