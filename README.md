@@ -10,13 +10,13 @@ how to load content onto AUP Online?
 - [Magazines](https://amsterdamuniversitypress.github.io/content-loading/magazines)
 
 ### subjects
-- [Access](https://amsterdamuniversitypress.github.io/content-loading/access)
 - [Accessibility](https://amsterdamuniversitypress.github.io/content-loading/accessibility)
 - [BITS](https://amsterdamuniversitypress.github.io/content-loading/bits)
 - [Citations and References](https://amsterdamuniversitypress.github.io/content-loading/citationsreferences)
 - [Content Identifiers](https://amsterdamuniversitypress.github.io/content-loading/contentidentifiers)
 - [eCommerce](https://amsterdamuniversitypress.github.io/content-loading/ecommerce)
 - [JATS](https://amsterdamuniversitypress.github.io/content-loading/jats)
+- [License](https://amsterdamuniversitypress.github.io/content-loading/license)
 - [Loading](https://amsterdamuniversitypress.github.io/content-loading/loading)
 - [Media](https://amsterdamuniversitypress.github.io/content-loading/media)
 - [Personal data](https://amsterdamuniversitypress.github.io/content-loading/personaldata)
