@@ -118,13 +118,35 @@ These elements are NOT nested and NOT (?) mandatory.
 2. `<copyright-year>`
 3. `<copyright-holder>`
 
-The copyright statement is displayed below the abstract (or one-page PDF if there is no abstract) on the article or chapter page. Copyright year and copyrioght holder are NOT displayed. Make sure to include that information in the copyright statement.
+The copyright statement is displayed below the abstract (or one-page PDF if there is no abstract) on the article or chapter page. Copyright year and copyright holder are NOT displayed. Make sure to include that information in the copyright statement.
 
-## JATs/BITS
+## delayed open access
+Is this a fourth kind of license? It certainly introduces a new tag:
+
+```xml
+
+<permissions>
+<copyright-statement>&#x00a9; Maria Vlaar</copyright-statement>
+<copyright-year>2023</copyright-year>
+<copyright-holder>Maria Vlaar</copyright-holder>
+    <license><ali:license_ref content-type="open-access" start_date="2023-07-05" xmlns:ali="http://www.niso.org/schemas/ali/1.0/">https://creativecommons.org/licenses/by-nc-nd/4.0/</ali:license_ref></license>
+</permissions>
+
+```
+
+The idea is to make the content publicly accessible after a certain period. The start date is in the XML. The XML does _not_ say what license type is applicable before that time.
+
+- [unhelpful JIRA ticket](https://jira.ingenta.com/jira/servicedesk/customer/portal/5/IEH-3693)
+- [AUP-CR014 - Delayed Open Access](https://confluence.ingenta.com/confluence/display/AUP/AUP-CR014+-+Delayed+Open+Access)
+
+
+## JATS/BITS
 
 JATS has several elements that deal with the usage, permissions, and licensing. Some of these elements are taken from the NISO Access and License Indicators (ALI) 2015 Recommended Practice specification. The other element is JATS-specific and predates the NISO recommendation:
 
 - `<ali:free_to_read>` — This NISO ALI element is a simple flag whose presence indicates that the document is free-to-read, without making statements about any additional reuse rights or restrictions. Date attributes can specify when the document is free to be read.
 - `<ali:license_ref>` — This NISO ALI element points to a public license or waiver. By “public”, NISO means that the offer is generally and not privately offered. Such a license may be either human or machine-readable text that explains the terms of use or reuse for the content.
-- `<license>` — A JATS-specific element whose content describes a set of conditions under which the content may be used, accessed, and distributed. This element was provided to hold the license text. The 2015 NISO ALI recommendation is to store in the XML document a URI that points to the license instead of the full license text. For users who adopt the NISO ALI recommendation, the <license> element could be used to hold a short representation of the license, a sentence or two to be used for display. Alternatively, a publisher could choose not to implement NISO ALI and to put the text of the license in <license>.
+- `<license>` — A JATS-specific element whose content describes a set of conditions under which the content may be used, accessed, and distributed. This element was provided to hold the license text. The 2015 NISO ALI recommendation is to store in the XML document a URI that points to the license instead of the full license text. For users who adopt the NISO ALI recommendation, the `<license>` element could be used to hold a short representation of the license, a sentence or two to be used for display. Alternatively, a publisher could choose not to implement NISO ALI and to put the text of the license in `<license>`.
   The <license> element takes the `@xlink:href` attribute to point to the text of the license. However, the new NISO ALI element `<ali:license_ref>` performs the same pointing function. JATS best practice is to omit the `@xlink:href` attribute from `<license>` if a NISO ALI `<ali:license_ref>` is used.
+
+This text seems to suggest `<ali:license_ref>` is the preferred tag for _all_ our license, in which case we would need to retag and reupload all content...
