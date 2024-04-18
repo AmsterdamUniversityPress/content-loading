@@ -41,6 +41,30 @@ For chapter 2, this should be `cha2_aff1`, etc.!
 - don't forget the cover image
 - zip the folder(folder name `10.5117_9784955525139` e.g.)
 
+## on Edify
+
+A book page on Edify has
+
+- URL, e.g. `https://qa.aup-online.com/content/books/10.5117/9783358449707`
+- title
+- subtitle
+- cover image
+- By Book Author First Name Book Author Surname
+- Format:
+- Publication Date: April 2024
+- Publisher: Amsterdam University Press
+- Ebook ISBN: 9789048552399
+- DOI: https://doi.org/10.5117/9783358449707
+- five tabs: Overviww, Chapters, References, Cited by, Supplements
+- Overview tab has abstract and license / copy right statement
+
+References (and then also Cited by) - are we going to do them? 
+
+How do Supplements work?
+
+- content editing tool
+
+
 ## see also
 See the chapter on BITS.
 
