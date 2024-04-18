@@ -12,13 +12,7 @@ The oldest and probably best known example is EZProxy, created in 1999. It is no
 
 - https://www.oclc.org/en/ezproxy.html
 
-## Alternatives
-Nowadays alternatives exist
-
-- Shibboleth
-- open authentication
-
-## Edify
+## EZProxy on Edify
 
 Edify supports authentication through EZProxy. Institutional administrators can add the IP addresses for their proxy servers into the IP address section. AUP administrators can also do that for the institutional accounts through the user management tool.
 
@@ -35,3 +29,17 @@ NeverProxy pub2web.metastore.ingenta.com
 On a related note, you can also submit a request to OCLC to get the EZProxy stanza added to their list. [Here](https://help.oclc.org/Library_Management/EZproxy/EZproxy_database_stanzas/Database_stanzas_I/Intellect_Discover) is an example of an EZProxy stanza on the OCLC site for the Intellect Discover Edify site.
 
 [Here](https://help-nl.oclc.org/Library_Management/EZproxy/EZproxy_database_stanzas/Database_stanzas_B/BrillOnline | BrillOnline Stanzas) is an example of the stanza of another publisher. In order to provide access to resources that use https, your EZproxy server must be configured with an [SSL certificate](https://help-nl.oclc.org/Library_Management/EZproxy/Secure_your_EZproxy_server/010SSL_configuration). This is the case  for Edify.
+
+## OpenAthens
+OpenAthens assigns a unique proxy IP address to each customer. Only valid users from this institution will be able to
+authenticate via this proxy IP address.
+
+## OpenAthens on Edify
+...
+
+## Alternatives
+Nowadays alternatives exist
+
+- Shibboleth
+- open authentication
+
