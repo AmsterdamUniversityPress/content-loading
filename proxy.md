@@ -8,7 +8,7 @@ In academic publishing, proxy servers are used to provide federated access. This
 
 ## EZProxy 
 
-The oldest and probably best known example is EZProxy, created in 1999. It is now a service provided by OCLC. EZProxy works by dynamically altering the URLs of the resources to match the proxy's URL, so that the client only access the proxy. 
+The oldest and probably best known example is [EZProxy](https://amsterdamuniversitypress.github.io/content-loading/ezproxy), created in 1999. It is now a service provided by OCLC. EZProxy works by dynamically altering the URLs of the resources to match the proxy's URL, so that the client only access the proxy. 
 
 - https://www.oclc.org/en/ezproxy.html
 
@@ -31,7 +31,7 @@ On a related note, you can also submit a request to OCLC to get the EZProxy stan
 [Here](https://help-nl.oclc.org/Library_Management/EZproxy/EZproxy_database_stanzas/Database_stanzas_B/BrillOnline | BrillOnline Stanzas) is an example of the stanza of another publisher. In order to provide access to resources that use https, your EZproxy server must be configured with an [SSL certificate](https://help-nl.oclc.org/Library_Management/EZproxy/Secure_your_EZproxy_server/010SSL_configuration). This is the case  for Edify.
 
 ## OpenAthens
-OpenAthens assigns a unique proxy IP address to each customer. Only valid users from this institution will be able to
+[OpenAthens][(https://amsterdamuniversitypress.github.io/content-loading/openathens) assigns a unique proxy IP address to each customer. Only valid users from this institution will be able to
 authenticate via this proxy IP address.
 
 ## OpenAthens on Edify
@@ -40,6 +40,6 @@ authenticate via this proxy IP address.
 ## Alternatives
 Nowadays alternatives exist
 
-- Shibboleth
-- open authentication
+- [Shibboleth](https://amsterdamuniversitypress.github.io/content-loading/shibboleth)
+- [Open Authentication](https://amsterdamuniversitypress.github.io/content-loading/openauthentication)
 
