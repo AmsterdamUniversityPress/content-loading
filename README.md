@@ -20,11 +20,17 @@ how to load content onto AUP Online?
 - [Loading](https://amsterdamuniversitypress.github.io/content-loading/loading)
 - [Media](https://amsterdamuniversitypress.github.io/content-loading/media)
 - [Personal data](https://amsterdamuniversitypress.github.io/content-loading/personaldata)
-- [Proxy](https://amsterdamuniversitypress.github.io/content-loading/proxy)
 - [Publication types](https://amsterdamuniversitypress.github.io/content-loading/publicationtypes)
-- [Updating  the journals price list](https://amsterdamuniversitypress.github.io/content-loading/updatingjournalspricelist)
+- [Updating the journals price list](https://amsterdamuniversitypress.github.io/content-loading/updatingjournalspricelist)
 - [Setting up access](https://amsterdamuniversitypress.github.io/content-loading/settingupaccess)
 - [Usage](https://amsterdamuniversitypress.github.io/content-loading/usage)
+
+### access
+- [Open Authentication](https://amsterdamuniversitypress.github.io/content-loading/openauthentication)
+- [OpenAthens](https://amsterdamuniversitypress.github.io/content-loading/openathens)
+- [Proxy](https://amsterdamuniversitypress.github.io/content-loading/proxy)
+- [Shibboleth](https://amsterdamuniversitypress.github.io/content-loading/shibboleth)
+- [SSO](https://amsterdamuniversitypress.github.io/content-loading/sso)
 
 ### imprints
 - [Imprints](https://amsterdamuniversitypress.github.io/content-loading/imprints)
