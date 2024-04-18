@@ -28,7 +28,7 @@ NeverProxy pub2web.metastore.ingenta.com
 
 On a related note, you can also submit a request to OCLC to get the EZProxy stanza added to their list. [Here](https://help.oclc.org/Library_Management/EZproxy/EZproxy_database_stanzas/Database_stanzas_I/Intellect_Discover) is an example of an EZProxy stanza on the OCLC site for the Intellect Discover Edify site.
 
-[Here](https://help-nl.oclc.org/Library_Management/EZproxy/EZproxy_database_stanzas/Database_stanzas_B/BrillOnline | BrillOnline Stanzas) is an example of the stanza of another publisher. In order to provide access to resources that use https, your EZproxy server must be configured with an [SSL certificate](https://help-nl.oclc.org/Library_Management/EZproxy/Secure_your_EZproxy_server/010SSL_configuration). This is the case  for Edify.
+[Here](https://help-nl.oclc.org/Library_Management/EZproxy/EZproxy_database_stanzas/Database_stanzas_B/BrillOnline) is an example of the stanza of another publisher. In order to provide access to resources that use `https`, your EZproxy server must be configured with an [SSL certificate](https://help-nl.oclc.org/Library_Management/EZproxy/Secure_your_EZproxy_server/010SSL_configuration). This is the case  for Edify.
 
 ## OpenAthens
 [OpenAthens](https://amsterdamuniversitypress.github.io/content-loading/openathens) assigns a unique proxy IP address to each customer. Only valid users from this institution will be able to
