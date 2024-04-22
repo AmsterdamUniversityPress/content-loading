@@ -35,7 +35,9 @@ The tag may contain a link to, and a description of, supplementary material. Giv
 
 ```
 
-Note the use of the `@id` - a local AUP ID - and `<uri>` - always the Figshare DOI. Inn this example, the `<supplementary-material>` tag is places in the book metadata, between the permissions and the cover image.
+Note the use of the `@id` - a local AUP ID - and `<uri>` - always the Figshare DOI. In this example, the `<supplementary-material>` tag is placed in the book metadata, between the permissions and the cover image.
+
+If it were a chapter supplement, it would be placed in the chapter metadata, between the page numbers and the link to the chapter PDF.
 
 ## see also
 
