@@ -23,6 +23,7 @@ how to load content onto AUP Online?
 - [Publication types](https://amsterdamuniversitypress.github.io/content-loading/publicationtypes)
 - [Updating the journals price list](https://amsterdamuniversitypress.github.io/content-loading/updatingjournalspricelist)
 - [Setting up access](https://amsterdamuniversitypress.github.io/content-loading/settingupaccess)
+- [Supplements](https://amsterdamuniversitypress.github.io/content-loading/supplements)
 - [Usage](https://amsterdamuniversitypress.github.io/content-loading/usage)
 
 ### access
