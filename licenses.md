@@ -149,3 +149,20 @@ JATS has several elements that deal with the usage, permissions, and licensing. 
 - `<license>` — A JATS-specific element whose content describes a set of conditions under which the content may be used, accessed, and distributed. This element was provided to hold the license text. The 2015 NISO ALI recommendation is to store in the XML document a URI that points to the license instead of the full license text. For users who adopt the NISO ALI recommendation, the `<license>` element could be used to hold a short representation of the license, a sentence or two to be used for display. Alternatively, a publisher could choose not to implement NISO ALI and to put the text of the license in `<license>`. The `<license>` element takes the `@xlink:href` attribute to point to the text of the license. However, the new NISO ALI element `<ali:license_ref>` performs the same pointing function. JATS best practice is to omit the `@xlink:href` attribute from `<license>` if a NISO ALI `<ali:license_ref>` is used.
 
 This text seems to suggest `<ali:license_ref>` is the preferred tag for _all_ our license, in which case we would need to retag and reupload all content...
+
+In fact, I believe we _have_ to. Look ath this example from NLM:
+
+```xml
+<license>
+  <ali:license_ref  
+    start_date="2014-02-03"
+    xmlns:ali="http://www.niso.org/schemas/ali/1.0/"> 
+   http://www.psychoceramics.org/license_v1.html</ali:license_ref>
+  <ali:license_ref 
+    start_date="2015-02-03"
+    xmlns:ali="http://www.niso.org/schemas/ali/1.0/">
+   http://creativecommons.org/licenses/by/3.0/</ali:license_ref>
+ </license>
+```
+
+At first, content is under a proprietary license (initial publication) and then, a year later, under a CC BY license. _Note how both licenses are **explicitly** stated. This is different from how AUP does, where the Subscribed-to license is **implicit**._
