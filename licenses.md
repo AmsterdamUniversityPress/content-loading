@@ -150,7 +150,7 @@ JATS has several elements that deal with the usage, permissions, and licensing. 
 
 This text seems to suggest `<ali:license_ref>` is the preferred tag for _all_ our license, in which case we would need to retag and reupload all content...
 
-In fact, I believe we _have_ to. Look ath this example from NLM:
+In fact, I believe we _have_ to. Look at this example from NLM:
 
 ```xml
 <license>
@@ -165,4 +165,4 @@ In fact, I believe we _have_ to. Look ath this example from NLM:
  </license>
 ```
 
-At first, content is under a proprietary license (initial publication) and then, a year later, under a CC BY license. _Note how both licenses are **explicitly** stated. This is different from how AUP does, where the Subscribed-to license is **implicit**._
+At first, content is under a proprietary license (initial publication) and then, a year later, under a CC BY license. _Note how both licenses are **explicitly** stated. This is different from how AUP does it, where the Subscribed-to license is **implicit**. So we **have** to make the Subscribed-to license explicit!_
