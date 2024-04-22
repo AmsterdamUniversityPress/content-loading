@@ -16,7 +16,7 @@ how to load content onto AUP Online?
 - [Content Identifiers](https://amsterdamuniversitypress.github.io/content-loading/contentidentifiers)
 - [eCommerce](https://amsterdamuniversitypress.github.io/content-loading/ecommerce)
 - [JATS](https://amsterdamuniversitypress.github.io/content-loading/jats)
-- [License](https://amsterdamuniversitypress.github.io/content-loading/license)
+- [Licenses](https://amsterdamuniversitypress.github.io/content-loading/licenses)
 - [Loading](https://amsterdamuniversitypress.github.io/content-loading/loading)
 - [Media](https://amsterdamuniversitypress.github.io/content-loading/media)
 - [Personal data](https://amsterdamuniversitypress.github.io/content-loading/personaldata)
