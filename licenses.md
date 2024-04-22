@@ -1,4 +1,4 @@
-# License
+# Licenses
 
 ## Access types
 Access types determine the conditions under which users can access and use the content. Subscribed means users need to be logged-in. OA and Free means users need not be logged-in. 
