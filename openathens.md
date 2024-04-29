@@ -25,6 +25,11 @@ This page in Confluence is about testing OpenAthens, but also explains well how 
 
 If the customer already exists, all you have to do is add the scope. This is always a short string, like `ubc.cat` and never an IP adres or some other ID. 
 
+## for the institution
+Enable Open Athens for your institution: Please contact `<contact-email-address>` to set up Open Athens for your institution. Please provide your Open Athens identifier or scope in the email.
+
+https://confluence.ingenta.com/confluence/display/AUP/Institutional+Administrators+FAQs#InstitutionalAdministratorsFAQs-EnableOpenAthensforyourinstitution | 
+
 
 ## see also
 
