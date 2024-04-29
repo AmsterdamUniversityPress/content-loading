@@ -21,8 +21,8 @@ how to load content onto AUP Online?
 - [Media](https://amsterdamuniversitypress.github.io/content-loading/media)
 - [Personal data](https://amsterdamuniversitypress.github.io/content-loading/personaldata)
 - [Publication types](https://amsterdamuniversitypress.github.io/content-loading/publicationtypes)
+- [Sushi](https://amsterdamuniversitypress.github.io/content-loading/sushi)
 - [Updating the journals price list](https://amsterdamuniversitypress.github.io/content-loading/updatingjournalspricelist)
-- [Setting up access](https://amsterdamuniversitypress.github.io/content-loading/settingupaccess)
 - [Supplements](https://amsterdamuniversitypress.github.io/content-loading/supplements)
 - [Usage](https://amsterdamuniversitypress.github.io/content-loading/usage)
 
@@ -30,6 +30,7 @@ how to load content onto AUP Online?
 - [Open Authentication](https://amsterdamuniversitypress.github.io/content-loading/openauthentication)
 - [OpenAthens](https://amsterdamuniversitypress.github.io/content-loading/openathens)
 - [Proxy](https://amsterdamuniversitypress.github.io/content-loading/proxy)
+- [Setting up access](https://amsterdamuniversitypress.github.io/content-loading/settingupaccess)
 - [Shibboleth](https://amsterdamuniversitypress.github.io/content-loading/shibboleth)
 - [SSO](https://amsterdamuniversitypress.github.io/content-loading/sso)
 
