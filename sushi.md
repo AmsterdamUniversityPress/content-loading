@@ -3,18 +3,20 @@
 ## what is it
 SUSHI was a way of getting COUNTER reports. The reports were in XML format, if I remember correctly.
 
-Past tense, because now they're called _COUNTER Report_ and you get them via the COUNTER API and they're in JSON (or CSV). Modern times, eh.
+Past tense, because now they're called _COUNTER Reports_ and you get them via the COUNTER API and they're in JSON (or CSV).
 
 - https://www.countermetrics.org/wp-content/uploads/2024/04/Guide-Working.pdf
 - https://www.countermetrics.org/wp-content/uploads/2024/04/Printable-Working.pdf
 
 
 ## help pages on Edify
-https://qa.aup-online.com/help/sushi
-https://aup-online.com/help/sushi
+
+- https://qa.aup-online.com/help/sushi
+- https://aup-online.com/help/sushi
 
 
 ## for institutional admins
+
 In order to set up the SUSHI credentials - which you need to obtain COUNTER reports - please do as follows:
 
 1. Login to AUP Online as institutional administrator (with username and password). 
@@ -23,9 +25,7 @@ In order to set up the SUSHI credentials - which you need to obtain COUNTER repo
 5. On this same page you can also see which SUSHI reports are available to you.
 6. Please also see this page for more information: https://www.aup-online.com/help/sushi
 
-
-
 ## see also
 
-https://app.swaggerhub.com/apis/COUNTER/counter-sushi_5_0_api/5.0.3
-https://www.countermetrics.org/
+- https://app.swaggerhub.com/apis/COUNTER/counter-sushi_5_0_api/5.0.3
+- https://www.countermetrics.org/
