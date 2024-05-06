@@ -4,7 +4,7 @@ AUP journal aricles, book chapters and whole books can have supplementary materi
 
 ## Figshare
 
-AUP policy is to place supplements on [Fishare](https://figshare.com/). I don't know how this is done, who does it, and whether the proper citation, with DOI, is mandatory. Nor do I know if this is the _only_ place of supplements.
+AUP policy is to place supplements on [Figshare](https://figshare.com/). I don't know how this is done, who does it, and whether the proper citation, with DOI, is mandatory. Nor do I know if this is the _only_ place of supplements.
 
 ### example
 
@@ -38,6 +38,13 @@ The tag may contain a link to, and a description of, supplementary material. Giv
 Note the use of the `@id` - a local AUP ID - and `<uri>` - always the Figshare DOI. In this example, the `<supplementary-material>` tag is placed in the book metadata, between the permissions and the cover image.
 
 If it were a chapter supplement, it would be placed in the chapter metadata, between the page numbers and the link to the chapter PDF.
+
+
+HOW DOES THIS WORK??
+
+## supplements tab on Edify
+To get something on there, do ????
+
 
 ## see also
 
