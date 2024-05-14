@@ -19,6 +19,7 @@ how to load content onto AUP Online?
 - [Licenses](https://amsterdamuniversitypress.github.io/content-loading/licenses)
 - [Loading](https://amsterdamuniversitypress.github.io/content-loading/loading)
 - [Media](https://amsterdamuniversitypress.github.io/content-loading/media)
+- [Pages](https://amsterdamuniversitypress.github.io/content-loading/pages)
 - [Personal data](https://amsterdamuniversitypress.github.io/content-loading/personaldata)
 - [Publication types](https://amsterdamuniversitypress.github.io/content-loading/publicationtypes)
 - [Sushi](https://amsterdamuniversitypress.github.io/content-loading/sushi)
