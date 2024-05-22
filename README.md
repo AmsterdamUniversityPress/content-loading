@@ -10,8 +10,10 @@ how to load content onto AUP Online?
 - [Magazines](https://amsterdamuniversitypress.github.io/content-loading/magazines)
 
 ### subjects
+- [Adding new pages](https://amsterdamuniversitypress.github.io/content-loading/addingnewpages)
 - [Accessibility](https://amsterdamuniversitypress.github.io/content-loading/accessibility)
 - [BITS](https://amsterdamuniversitypress.github.io/content-loading/bits)
+- [Changing news items](https://amsterdamuniversitypress.github.io/content-loading/changingnewsitems)
 - [Citations and References](https://amsterdamuniversitypress.github.io/content-loading/citationsreferences)
 - [Content Identifiers](https://amsterdamuniversitypress.github.io/content-loading/contentidentifiers)
 - [Delayed Open Access](https://amsterdamuniversitypress.github.io/content-loading/delayedopenaccess)
@@ -45,6 +47,9 @@ how to load content onto AUP Online?
 
 ## not related to loading (knowledge base)
 - [ONIX](https://amsterdamuniversitypress.github.io/content-loading/onix)
+
+## webinar
+- [webinar-20240606](https://amsterdamuniversitypress.github.io/content-loading/webinar-20240606)
 
 ## planned pages
 
