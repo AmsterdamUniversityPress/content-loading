@@ -1,5 +1,16 @@
 # eCommerce
 
+eCommerce is the option on AUP Online for users to buy journal articles (or book chapters) without a subscription. So if a user is interested in a given article they don't need to subscribe to the journal, instead they can buy the individual article.
+
+Below is described how the site admin can manage ecommerce for journal articles and book chapters. Note that this is per item. If AUP wants to manage ecommerce per product type, it needs to happen via the back end, i.e. it needs intervention by Ingenta.
+
+## important caveat
+What happens in reality is that users buy access to a page. That page is based on the DOI of the article or chapter. That in turn is based on the ISSN or ISBN. Whatever is on that page, the user has access to it. 
+
+Currently, the full-text and the PDF _both_ live on that page. Access - via ecommerce or via subscription - is to _both_. If we add a third format, access would be to all _three_. 
+
+If formats needs to be sold _separately_, a new ISSN/ISBN/DOI needs to be created. The disadvantage is that content seemingly appears double on the platform.
+
 ## journal articles
 
 Edify enables users to purchase access to articles through the site. This works as follows.
@@ -43,7 +54,7 @@ For a complete overview, see the [Ecommerce Purchase Documentation](https://conf
 ## book, volume, and issue purchases
 Edify can also offer options for book, volume, and issue purchases. We can also integrate with print and print on demand fulfilment providers for print purchases and provide Patron Driven Acquisition access to institutions.
 
-## Publisher Administration Tools
+It works by using the Publisher Administration Tools.
 
 ### set prices
 The site admin can set prices, discounts and offer codes for content items through Edify's price management tools.
@@ -65,3 +76,6 @@ Publishers can supply subscription information in automated feeds in CSV format 
 
 ### offline purchasing capabilities
 Publishers can enable offline purchasing capabilities within the site. Institutional administrators can add items to their cart and submit the cart for offline payment instead of purchasing it online through e-commerce. An email with the contents of the cart as an invoice will be sent to the institutional administrator as well as AUP sales staff. In the background, Edify creates a pending license against the selected content for the institution’s account. The institution won’t have access at this point because the payment hasn’t yet been made and the license is in pending state. After the payment has been made offline, AUP staff can activate the license through a single click in the user management tool.
+
+## note
+Note that the site admin can also buy access to items for users who are unable to do it themselves.
