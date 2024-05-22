@@ -14,6 +14,7 @@ how to load content onto AUP Online?
 - [BITS](https://amsterdamuniversitypress.github.io/content-loading/bits)
 - [Citations and References](https://amsterdamuniversitypress.github.io/content-loading/citationsreferences)
 - [Content Identifiers](https://amsterdamuniversitypress.github.io/content-loading/contentidentifiers)
+- [Delayed Open Access](https://amsterdamuniversitypress.github.io/content-loading/delayedopenaccess)
 - [eCommerce](https://amsterdamuniversitypress.github.io/content-loading/ecommerce)
 - [JATS](https://amsterdamuniversitypress.github.io/content-loading/jats)
 - [Licenses](https://amsterdamuniversitypress.github.io/content-loading/licenses)
