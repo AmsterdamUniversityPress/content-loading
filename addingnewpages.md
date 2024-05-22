@@ -12,5 +12,5 @@ How to add new pages to AUP Online?
 ## How to remove a page?
 1. Login as site admin
 2. Go the page you want to remove
-3. Click the _remove page_ button
+3. Click the _Remove this page_ button
 4. Presto 🍰
