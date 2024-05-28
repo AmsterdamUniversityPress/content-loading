@@ -3,7 +3,7 @@
 Delayed Open Access (DOA) is a business model where a publication "flips" to Open Access after a period of subscribed-to access. This embargo period gives the publisher an opportunity to recoup costs.
 
 ## OA or not?
-Current AUP practive is to open all back list content after 24 months. Is this DOA or simply free access? Certainly it is referred to as DOA.Soem argue that DOA is not OA at all because OA should be immediate. Hence delayed access journals are not included in the Directory of Open Access Journals ([DOAJ](https://doaj.org/)).
+Current AUP practive is to open all back list content after 24 months. Is this DOA or simply free access? Certainly it is referred to as DOA. Some argue that DOA is not OA at all because OA should be immediate. Hence delayed access journals are not included in the Directory of Open Access Journals ([DOAJ](https://doaj.org/)).
 
 ## AUP Online
 AUP Online does not functionally support DOA at the moment. This means licenses must be changed manually after the embargo period, and content reloaded. DOES THAT ACTUALLY HAPPEN?
@@ -40,6 +40,22 @@ And this is how Crius tagged it experimentally (recent and older example).
 ```
 
 These examples are missing the references to the subscribed-to license. This raises the question where that license may be found online. 
+
+A more comprehensive tagging compliant with the NISO/JATS approach would be
+
+```xml
+<permissions>
+ <license>
+  <license-p>This content is under a proprietary license until 2026-05-01 when it will be Open Access</license-p>
+  <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" start_date="2024-05-01">
+   https://www.aup.nl/en/publish/rights-and-permissions</ali:license_ref>
+  <ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" start_date="2026-05-01">
+   xmlns:ali="http://www.niso.org/schemas/ali/1.0/">https://creativecommons.org/licenses/by-nc-nd/4.0/</ali:license_ref>
+ </license>
+</permissions>
+
+```
+
  
 <!--
 <license license-type="" 
@@ -62,3 +78,5 @@ Wat maakt dit uit?
 - https://en.wikipedia.org/wiki/Delayed_open-access_journal | Delayed open-access journal
 - https://jats.nlm.nih.gov/archiving/tag-library/1.3/element/license.html | License Information
 - https://jats.nlm.nih.gov/archiving/tag-library/1.3/element/ali-license_ref.html | License Reference (NISO and Access License Indicators)
+- https://groups.niso.org/higherlogic/ws/public/download/14226/rp-22-2015_ALI.pdf | Access License and
+Indicators
