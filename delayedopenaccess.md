@@ -3,7 +3,7 @@
 Delayed Open Access (DOA) is a business model where a publication "flips" to Open Access after a period of subscribed-to access. This embargo period gives the publisher an opportunity to recoup costs.
 
 ## OA or not?
-Current AUP practive is to open all back list content after 24 months. Is this DOA or simply free access? Certainly it is referred to as DOA. Some argue that DOA is not OA at all because OA should be immediate. Hence delayed access journals are not included in the Directory of Open Access Journals ([DOAJ](https://doaj.org/)).
+Current AUP practice is to open all back list content after 24 months. Is this DOA or simply free access? Certainly it is referred to as DOA. Some argue that DOA is not OA at all because OA should be immediate. Hence delayed open access journals are not included in the Directory of Open Access Journals ([DOAJ](https://doaj.org/)).
 
 ## AUP Online
 AUP Online does not functionally support DOA at the moment. This means licenses must be changed manually after the embargo period, and content reloaded. DOES THAT ACTUALLY HAPPEN?
@@ -75,8 +75,7 @@ Wat maakt dit uit?
 -->
 
 ## see also
-- https://en.wikipedia.org/wiki/Delayed_open-access_journal | Delayed open-access journal
-- https://jats.nlm.nih.gov/archiving/tag-library/1.3/element/license.html | License Information
-- https://jats.nlm.nih.gov/archiving/tag-library/1.3/element/ali-license_ref.html | License Reference (NISO and Access License Indicators)
-- https://groups.niso.org/higherlogic/ws/public/download/14226/rp-22-2015_ALI.pdf | Access License and
-Indicators
+- [Delayed open-access journal in Wikipedia](https://en.wikipedia.org/wiki/Delayed_open-access_journal)
+- [JATS License Information](https://jats.nlm.nih.gov/archiving/tag-library/1.3/element/license.html)
+- [JATS License Reference (NISO and Access License Indicators)](https://jats.nlm.nih.gov/archiving/tag-library/1.3/element/ali-license_ref.html)
+- [NISO Access License and Indicators](https://groups.niso.org/higherlogic/ws/public/download/14226/rp-22-2015_ALI.pdf)
