@@ -1,47 +1,43 @@
 # Magazines
 
-Magazines are periodicals for a more general public. On the platform, the content is present in "flipbooks" (Flowpaper functionality). 
+Magazines are periodicals for a more general public. On the platform, the content (PDF) is present in "flipbooks" (Flowpaper functionality). 
 
 Technically, magazines are books on the platform, and this is visible
 
-- in the breadcrumb
-- in the URL
-- in the filters
+- in the breadcrumb, e.g. `Home > Books > De Dikke Blauwe Volume 2015 003`
+- in the URL, e.g. `/content/books/10.5117/DDB2015.003.000`
+- in the navigation, e.g. , you can find the magazines under `/content/books`.
 
-However, magazines _are_ a separate product type on the platform and can be filtered using the `MagazineIssue` filter.
+Basically, books and magazines cannot be distinguished on the platform. Moreover, the platform has been tweaked to show journals only. 
+
+However, magazines _are_ a separate content type on the platform and can be filtered using the `MagazineIssue` filter. (Although the magazine issues are called "volumes" and are published twice a year). For example:
+
+- `/search?value1=MagazineIssue&option1=contentType`
+
+The magazine issues ("volumes") can be found under
+
+- `/content/books/[DOI]`, e,g, `/content/books/10.5117/DDB2015.003.000`
+
+The magazine as a whole can be found under
+
+- `/content/periodicals/[ISSN]`, e.g. `/content/periodicals/26664186`
+
 
 ## BITS
 
 Because magazines are books, they are encoded in BITS XML. Currently, the BITS files are metadata only.
 
-It can be helpful to add a little more information to the metadata.
+### enrich the metadata
+It can be helpful to add a little more information to the metadata. `<collection-meta>` and `<book-part>` make little sense, but consider
 
-- ⭐ Add `<collection-meta>` and fill it with appropriate metadata, e.g. the magazine ISSN.
-- ⭐ Add relevant information to the  `<book-meta>`, such as editor, abstract, and especially keywords. (Or include book-parts and display chapters). 
+- ⭐ Add relevant information to the  `<book-meta>`, such as editor, abstract, and especially keywords. Also ISBN.
 
-#### example BITS XML
+### example BITS XML
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book PUBLIC "-//NLM//DTD BITS Book Interchange DTD v2.0 20151225//EN" "BITS-book2.dtd">
 <book xmlns:xlink="http://www.w3.org/1999/xlink" book-type="magazine" xml:lang="en">
-        <collection-meta>
-                <collection-id collection-id-type="publisher-id">DDB</collection-id> <!-- is this used? -->
-                <volume-in-collection>
-                        <volume-number>2022.124</volume-number>
-                        <volume-title>De Dikke Blauwe Volume 124</volume-title>
-                </volume-in-collection>
-                <!-- I believe this should be added
-                <issn pub-type="ppub">2666-4186</issn>
-               <issn pub-type="epub">1234-5678</issn> 
-               or 
-               <issn publication-format="electronic" content-type="periodical">2666-4186</issn>
-               <issn publication-format="print" content-type="periodical">1234-5678</issn>
-               -->
-                <publisher>
-                        <publisher-name>Walburg Pers</publisher-name>
-                </publisher>
-        </collection-meta>
         <book-meta>
         <book-id book-id-type="doi">10.5117/DDB2022.124.000</book-id>
         <book-title-group>
@@ -64,12 +60,9 @@ It can be helpful to add a little more information to the metadata.
                 <year>2023</year>
                 <month>05</month>
         </pub-date>
-        <!-- I believe this has no place here -->
-        <!-- it HAS to be here now, or it won't load -->
         <issn publication-format="electronic" content-type="periodical">2666-4186</issn>
         <publisher>
                 <publisher-name>Amsterdam University Press</publisher-name>
-                <!-- do we need this? -->
                 <publisher-loc>
                         <addr-line>Nieuwe Prinsengracht 89</addr-line>
                         <postal-code>1018 VR</postal-code>
@@ -82,12 +75,6 @@ It can be helpful to add a little more information to the metadata.
                 <copyright-year>2022</copyright-year>
                 <copyright-holder>Amsterdam University Press</copyright-holder>
         </permissions>
-        <!-- I believe this should be added 
-        <kwd-group  xml:lang="en">
-            <kwd>Philanthropy</kwd>
-            <kwd>Pindakaas</kwd>
-            <kwd>Borrelnootjes</kwd>
-        </kwd-group> -->
         <self-uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="DDB2022_124_000.pdf" content-type="pdf" />
 </book-meta>
 </book>
