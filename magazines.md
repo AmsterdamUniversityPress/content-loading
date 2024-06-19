@@ -1,5 +1,19 @@
 # Magazines
 
+Magazines are periodicals for a more general public. On the platform, the content is present in "flipbooks" (Flowpaper functionality). 
+
+Technically, magazines are books on the platform, and this is visible
+
+- in the breadcrumb
+- in the URL
+- in the filters
+
+However, magazines _are_ a separate product type on the platform and can be filtered using the `MagazineIssue` filter.
+
+## BITS
+
+Because magazines are books, they are encoded in BITS XML. Currently, the BITS files are metadata only.
+
 It can be helpful to add a little more information to the metadata.
 
 - ⭐ Add `<collection-meta>` and fill it with appropriate metadata, e.g. the magazine ISSN.
