@@ -22,6 +22,19 @@ The magazine as a whole can be found under
 
 - `/content/periodicals/[ISSN]`, e.g. `/content/periodicals/26664186`
 
+## license
+
+It is important to add the correct license information to the metadata. It is also important to realize that on the platform, e-commerce is not activated for this content type. This means that if users do not have access to the magazine, they will see _neither_ a PDF button _nor_ a "Buy this now" button. 
+
+(And because there is no abstract or keywords, a magazine issue landing page will ook very bare).
+
+## cover image
+Must be added manually
+
+## issues
+- how to set a volume to contentype `MagazineIssue`?
+- how to get a volume listed on the periodical page? (It looks as if `<issn publication-format="electronic" content-type="periodical">26664186</issn>` does the trick, instead of `<issn publication-format="electronic" content-type="periodical">2666-4186</issn>`
+- how to add keywords? (Using `<kwd>` gives aloading error on the ftp).
 
 ## BITS
 
