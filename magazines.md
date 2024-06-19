@@ -32,9 +32,11 @@ It is important to add the correct license information to the metadata. It is al
 Must be added manually
 
 ## issues
-- how to set a volume to contentype `MagazineIssue`?
-- how to get a volume listed on the periodical page? (It looks as if `<issn publication-format="electronic" content-type="periodical">26664186</issn>` does the trick, instead of `<issn publication-format="electronic" content-type="periodical">2666-4186</issn>`
+- how to set a volume to contentype `MagazineIssue`? (It looks as if `<issn publication-format="electronic" content-type="periodical">26664186</issn>` does the trick, instead of `<issn publication-format="electronic" content-type="periodical">2666-4186</issn>`
+- how to get a volume listed on the periodical page? (It looks as if `<issn publication-format="electronic" content-type="periodical">26664186</issn>` does the trick, instead of `<issn publication-format="electronic" content-type="periodical">2666-4186</issn>`)
 - how to add keywords? (Using `<kwd>` gives aloading error on the ftp).
+- leaving out the hyphen in the issn (as above) leads to an unintented effect: the content is accessible to anyone, not matter the license.
+- putting the hyphen in leads to another unintented effect: no preview.
 
 ## BITS
 
@@ -93,7 +95,6 @@ It can be helpful to add a little more information to the metadata. `<collection
 </book>
 
 ```
-
 
 ### XML in the interface
 
