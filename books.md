@@ -1,6 +1,45 @@
 # Books
 
-## lower case
+
+## platform
+
+The landing page of a successfully uploaded book is:
+
+- `/content/books/[DOI]` e.g., `/content/books/10.5117/9781386367109`
+
+The book will be listed among the other books for browsing:
+
+- `/content/books`
+
+Searching by content type `book` ought to return the same books:
+
+- `/search?value1=Book&option1=contentType`
+
+These page have different filters...
+
+## landing page
+
+The book landing page has a number of default tabs
+
+- Overview
+- Chapters
+- References
+- Cited By
+- Supplements
+
+Overview (URL `\#overview`) and Chapters (URL `\#chapters`) are always filled as you cannot load a book without chapters (i.e., without book parts in the XML). The list of chapters acts as a table of contents. 
+
+If a book has no abstract (in the XML) a preview is shown; this is the first page of the PDF. (This is irrespective of access or license).
+
+If there is an abstract, that will be shown, together with keywords and license information (if applicable; if the book is "Subscribed-to" content nothing is shown).
+
+
+
+
+
+## uploading books
+
+### lower case
 The Edify loader expects lower case in the DOIs.
 
 - `<book-part-id book-part-id-type="doi">10.5117/9784955525139_CH01</book-part-id>` = ❌
@@ -8,12 +47,12 @@ The Edify loader expects lower case in the DOIs.
 
 Apparently, this requirement will be dropped after the 2024 Q1 release.
 
-## link to the PDF
+### link to the PDF
 Make sure to reference the PDFs from the XML using a self-uri element in `<book-part-meta>`.
 
 - `<self-uri xlink:href="10.5117_9784955525139_ch01.pdf" content-type="pdf"/>`
 
-## file names
+### file names
 One file per chapter. File name is identical to the DOI but with underscore instead of slash. Don't forget the file type extension (`.pdf` in this case).
 
 - 10.5117_9784955525139_fm.pdf = front matter
@@ -22,26 +61,26 @@ One file per chapter. File name is identical to the DOI but with underscore inst
 - 10.5117_9784955525139_bm.pdf = back matter
 - 10.5117_9784955525139_cover.jpg = cover image
 
-## cover
+### cover
 Make sure to add a cover image! Add a link to a `.jpg` file between `<permissions` and `<abstract` in the `<book-meta>`:
 
 - `<self-uri xlink:role="http://pub2web.metastore.ingenta.com/ns/coverImage" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="10.5117_9784955525139_cover.jpg"/>`
 
-## pitfall
+### pitfall
 Make sure all IDs are unique. This includes the ID in the `<xref>` related to the author's affiliation.
 
 `<xref ref-type="aff" rid="cha1_aff1"><sup>1</sup></xref>`
 
 For chapter 2, this should be `cha2_aff1`, etc.!
 
-## practicalities
+### practicalities
 - 1 PDF file per chapter
 - no PDF file for the whole book
 - 1 XML file for the whole book. This includes the information per chapter
 - don't forget the cover image
 - zip the folder(folder name `10.5117_9784955525139` e.g.)
 
-## on Edify
+## platform specifics
 
 ### book page
 A book page on Edify has
