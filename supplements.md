@@ -67,7 +67,7 @@ If it were a chapter supplement, it would be placed in the chapter metadata, bet
 
 1. **the `<supplementary-material>` tag has to go BETWEEN `<publisher>` AND `<permissions>` or the upload will fail.**
 2. **only LOCAL files are permitted**. This basically means that everything is uploaded twice: onto Edify and onto Fighare. It looks like the name of the file is irrelevant, but you haver to get the MIME type right. **The file is included in the zip that is uploaded onto the FTP.**
-3. **Only the `<p>` element is processed by the application. Sigh**.
+3. **Only the `<caption>` element and its children `<title>` and `<p>` are processed by the application (and reduced to `<span>` so no mark-up).**.
 
 
 ## supplements tab on Edify
