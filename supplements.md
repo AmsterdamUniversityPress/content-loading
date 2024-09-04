@@ -20,7 +20,7 @@ https://doi.org/10.7274/24734862.v1
 
 ## How to upload supplements onto AUP Online?
 
-There are tow ways: through the XML and manually.
+There are two ways: through the XML and manually.
 
 ### XML
 It has to go through the XML. But how? The description here [here](https://confluence.ingenta.com/confluence/pages/viewpage.action?spaceKey=AUP&title=JATS+XML+Guidelines#JATSXMLGuidelines-Supplementarymaterial) is less than useless as it tells us nothing about metadata or how files should be loaded. The only thing we know is that we must use the `<supplementary-material>` element within `article/front/article-meta`.
@@ -54,12 +54,12 @@ Note the use of the `@id` - a local AUP ID - and `<uri>` - always the Figshare D
 
 If it were a chapter supplement, it would be placed in the chapter metadata, between the page numbers and the link to the chapter PDF.
 
-
-HOW DOES THIS WORK??
+**Important: the `<supplementary-material>` tag has to go BETWEEN `<publisher>` AND `<permissions>` or the upload will fail.**
 
 ## supplements tab on Edify
-To get something on there, do ????
+If the XML is tagged correctly, the supplements metadata will be displayed on the supplements tab in Edify. (Silly example [here](https://qa.aup-online.com/content/books/10.5117/9787062629530#supplementary_data)). Also, an icon (and some text) will be displayed for the supplement itself. Click on the icon and the supplement will open in a new tab. (Silly example [here](https://qa.aup-online.com/docserver/fulltext/10.5117/9787062629530/Italy-Girgenti-temple-Concord.jpg?expires=1725462546&id=id&accname=21&checksum=FFD8A426AB56B7B1F1FAE95935E76C3C&union=true)).
 
+Note that access to the supplements tab is determined by the user's access to the content. For example, not anyone can see the supplements for a subscribed-to article, only the paying user.
 
 ## see also
 
