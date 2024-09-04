@@ -44,17 +44,31 @@ The tag may be contained in a `<sec>` in the article `<body>` for journal articl
 The tag may contain a link to, and a description of, supplementary material. Given that AUP uses Figshare, this is an example of what such a tag can look like:
 
 ```xml
+<supplementary-material id="S0" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:title="local_file" xlink:href="Italy-Girgenti-temple-Concord.jpg" mimetype="image/jpeg">
+  <caption><p>G. Massiot &#038; cie (2017). Temple of Concord: View of front facade. University of Notre Dame. Figure. https://doi.org/10.7274/24734862.v1</p></caption>
+</supplementary-material>
+```
+
+<!--
+This is what I had first. That did NOT work
+
 <supplementary-material id="s0" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://doi.org/10.7274/24734862.v1">
   <uri>https://doi.org/10.7274/24734862.v1</uri>
   <p>G. Massiot &#038; cie (2017). Temple of Concord: View of front facade. University of Notre Dame. Figure. https://doi.org/10.7274/24734862.v1</p>
 </supplementary-material>
-```
 
 Note the use of the `@id` - a local AUP ID - and `<uri>` - always the Figshare DOI. In this example, the `<supplementary-material>` tag is placed in the book metadata, between the permissions and the cover image.
 
 If it were a chapter supplement, it would be placed in the chapter metadata, between the page numbers and the link to the chapter PDF.
+-->
 
-**Important: the `<supplementary-material>` tag has to go BETWEEN `<publisher>` AND `<permissions>` or the upload will fail.**
+
+**Important**
+
+1. **the `<supplementary-material>` tag has to go BETWEEN `<publisher>` AND `<permissions>` or the upload will fail.**
+2. **only LOCAL files are permitted**. This basically means that everything is uploaded twice: onto Edify and onto Fighare. It looks like the name of the file is irrelevant, but you haver to get the MIME type right. **The file is included in the zip that is uploaded onto the FTP.**
+3. **Only the `<p>` element is processed by the application. Sigh**.
+
 
 ## supplements tab on Edify
 If the XML is tagged correctly, the supplements metadata will be displayed on the supplements tab in Edify. (Silly example [here](https://qa.aup-online.com/content/books/10.5117/9787062629530#supplementary_data)). Also, an icon (and some text) will be displayed for the supplement itself. Click on the icon and the supplement will open in a new tab. (Silly example [here](https://qa.aup-online.com/docserver/fulltext/10.5117/9787062629530/Italy-Girgenti-temple-Concord.jpg?expires=1725462546&id=id&accname=21&checksum=FFD8A426AB56B7B1F1FAE95935E76C3C&union=true)).
