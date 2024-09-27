@@ -42,7 +42,7 @@ The Edify loader expects lower case in the DOIs.
 - `<book-part-id book-part-id-type="doi">10.5117/9784955525139_CH01</book-part-id>` = ❌
 - `<book-part-id book-part-id-type="doi">10.5117/9784955525139_ch01</book-part-id>` = ✅
 
-Apparently, this requirement will be dropped after the 2024 Q1 release.
+(This requirement was dropped after the 2024 Q2 release. Remember, the reference in the XML has to match _exactly_ the file name. In any case, **we continue to use lower case**).
 
 ### link to the PDF
 
