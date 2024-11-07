@@ -3,7 +3,7 @@
 How to set up access for a customer in [[Edify]]?
 
 ## Before we start
-Before you do anything, make sure the content [is correctyl tagged](https://amsterdamuniversitypress.github.io/content-loading/access) and e-commerce is [set up properly](???).
+Before you do anything, make sure the content [is correctly tagged](https://amsterdamuniversitypress.github.io/content-loading/access) and e-commerce is [set up properly](???).
 
 ## UN/PW
 
@@ -12,10 +12,10 @@ Before you do anything, make sure the content [is correctyl tagged](https://amst
 ## ??
 
 ## Shibboleth
-
+- ??
 
 ## OpenAthens
-
+- ??
 
 ### Proxy
 It occasionally happens that a customer wants OpenAthens set up via a [proxy](https://amsterdamuniversitypress.github.io/content-loading/proxy). In that case the proxy's IP address is included in the list of IP addresses and the customer's scope (always a name) in the scope field.
@@ -27,6 +27,7 @@ It occasionally happens that a customer wants OpenAthens set up via a [proxy](ht
 - https://login.openathens.net/org-list
 
 ## OAuth
-
+- ??
 
 ## SSO
+- Needs to be set up by Ingenta
