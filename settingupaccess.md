@@ -1,4 +1,4 @@
-# Settingn up access
+# Setting up access
 
 How to set up access for a customer in [[Edify]]?
 
