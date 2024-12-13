@@ -18,6 +18,7 @@ how to load content onto AUP Online?
 - [Collections](https://amsterdamuniversitypress.github.io/content-loading/collections)
 - [Content Identifiers](https://amsterdamuniversitypress.github.io/content-loading/contentidentifiers)
 - [Delayed Open Access](https://amsterdamuniversitypress.github.io/content-loading/delayedopenaccess)
+- [DOI Registration](https://amsterdamuniversitypress.github.io/content-loading/doiregistration)
 - [eCommerce](https://amsterdamuniversitypress.github.io/content-loading/ecommerce)
 - [Editor](https://amsterdamuniversitypress.github.io/content-loading/editor)
 - [JATS](https://amsterdamuniversitypress.github.io/content-loading/jats)
@@ -41,6 +42,7 @@ how to load content onto AUP Online?
 - [Setting up access](https://amsterdamuniversitypress.github.io/content-loading/settingupaccess)
 - [Shibboleth](https://amsterdamuniversitypress.github.io/content-loading/shibboleth)
 - [SSO](https://amsterdamuniversitypress.github.io/content-loading/sso)
+- [OOpen Access](https://amsterdamuniversitypress.github.io/content-loading/openaccess)
 
 ### imprints
 - [Imprints](https://amsterdamuniversitypress.github.io/content-loading/imprints)
